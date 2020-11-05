@@ -6,7 +6,8 @@
 	"scripts": {
 		"format": "prettier \"src/**/*.{js,html,scss}\" --write",
 		"eslint": "eslint \"src/**/*.{html,js}\"",
-		"eslint:fix": "eslint \"src/**/*.{html,js}\""
+		"eslint:fix": "eslint \"src/**/*.{html,js}\"",
+		"sass:compile": "sass --watch src/assets/styles/scss/main.scss:src/assets/styles/scss/main.css"
 	},
 	"repository": {
 		"type": "git",
