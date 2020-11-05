@@ -1,0 +1,23 @@
+{
+	"tabWidth": 4,
+	"useTabs": true,
+	"overrides": [{
+			"files": ["*.tsx", "*.test.tsx", "*.ts"],
+			"options": {
+				"singleQuote": true,
+				"trailingComma": "all",
+				"jsxBracketSameLine": true,
+				"parser": "babel-ts",
+				"semi": true,
+				"proseWrap": "always",
+				"arrowParens": "always"
+			}
+		},
+		{
+			"files": "scss",
+			"options": {
+				"endOfLine": "auto"
+			}
+		}
+	]
+}
