@@ -1,3 +1,7 @@
+# js
 /src/assets/scripts/jquery.min.js
 /src/assets/scripts/bootstrap.min.js
+/src/assets/scripts/popper.min.js
+
+# css
 /src/assets/styles/bootstrap.min.css
