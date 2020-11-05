@@ -1,0 +1,31 @@
+{
+	"root": true,
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"rules": {
+		"linebreak-style": "error",
+		"semi": "error",
+		"no-await-in-loop": "warn",
+		"no-alert": "error",
+		"no-var": "error",
+		"import/order": "off",
+		"no-restricted-syntax": "off",
+		"no-case-declarations": "off",
+		"no-param-reassign": "off",
+		"radix": "off",
+		"guard-for-in": "off",
+		"class-methods-use-this": "off",
+		"no-unused-vars": "error",
+		"constructor-super": "error",
+		"no-this-before-super": "error",
+		"no-empty": "warn",
+		"no-console": "off",
+		"quotes": "error"
+	}
+}
