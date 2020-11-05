@@ -4,7 +4,7 @@
 	"description": "Omelette project",
 	"main": "index.js",
 	"scripts": {
-		"format": "prettier \"src/**/*.{js,html,scss,css}\" --write",
+		"format": "prettier \"src/**/*.{js,html,css}\" --write",
 		"eslint": "eslint \"src/**/*.{html,js}\"",
 		"eslint:fix": "eslint \"src/**/*.{html,js}\""
 	},
@@ -37,6 +37,6 @@
 		}
 	},
 	"lint-staged": {
-		"src/**/*": "prettier \"src/**/*.{js,html,scss,css}\" --write --ignore-unknown"
+		"src/**/*": "prettier \"src/**/*.{js,html,css}\" --write --ignore-unknown"
 	}
 }
