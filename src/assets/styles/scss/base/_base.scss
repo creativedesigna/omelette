@@ -1,3 +1,24 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	direction: ltr;
+	text-align: left;
+	font-family: $font-montserrat;
+	font-weight: bold;
+	color: #000;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+}

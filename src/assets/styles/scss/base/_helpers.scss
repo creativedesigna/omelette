@@ -1,3 +1,38 @@
 // -----------------------------------------------------------------------------
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
+
+// Color
+.text-secondary-1 {
+	color: $secondary-1;
+
+	&:hover {
+		color: $secondary-1;
+	}
+}
+
+.text-secondary-2 {
+	color: $secondary-2;
+
+	&:hover {
+		color: $secondary-2;
+	}
+}
+
+.text-secondary-3 {
+	color: $secondary-3;
+
+	&:hover {
+		color: $secondary-3;
+	}
+}
+
+.text-danger-1 {
+	color: $danger-1;
+
+	&:hover {
+		color: $danger-1;
+	}
+}
+
+// Background
