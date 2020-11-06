@@ -75,3 +75,17 @@
 .bg-dark-1 {
 	background-color: $dark-1;
 }
+
+// cursor
+.cursor-pointer {
+	cursor: pointer;
+}
+
+// animation
+.animation-scale {
+	transition: 0.3s;
+
+	&:hover {
+		transform: scale(0.9);
+	}
+}

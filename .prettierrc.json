@@ -1,7 +1,8 @@
 {
 	"tabWidth": 4,
 	"useTabs": true,
-	"overrides": [{
+	"overrides": [
+		{
 			"files": ["*.tsx", "*.test.tsx", "*.ts"],
 			"options": {
 				"singleQuote": true,

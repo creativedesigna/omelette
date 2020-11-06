@@ -15,6 +15,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #000;
+  width: 100%;
+  height: 100%;
 }
 
 ul,
@@ -94,6 +96,29 @@ ol {
 
 .bg-dark-1 {
   background-color: #252b42;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.animation-scale {
+  transition: 0.3s;
+}
+.animation-scale:hover {
+  transform: scale(0.9);
+}
+
+.header {
+  height: 105px;
+}
+.header__nav ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.header__nav ul li a:hover {
+  transform: scale(0.9);
 }
 
 .top-nav {
