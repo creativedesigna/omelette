@@ -76,6 +76,10 @@
 	background-color: $dark-1;
 }
 
+.bg-warning-gradient {
+	background-image: linear-gradient($warning-1, $warning-2);
+}
+
 // cursor
 .cursor-pointer {
 	cursor: pointer;
@@ -88,4 +92,19 @@
 	&:hover {
 		transform: scale(0.9);
 	}
+}
+
+// rounded
+.rounded-high {
+	border-radius: 30px;
+}
+
+.py-normal {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.px-normal {
+	padding-left: 30px;
+	padding-right: 30px;
 }

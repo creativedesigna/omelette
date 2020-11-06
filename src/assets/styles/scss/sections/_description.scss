@@ -1,0 +1,32 @@
+.s-description {
+	background-image: url(../../uploads/images/sections/descriptioons/background-image.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 750px;
+	width: 100%;
+	position: relative;
+
+	&__content {
+		min-width: 600px;
+
+		p {
+			font-size: 24px;
+		}
+
+		h3 {
+			font-size: 58px;
+		}
+	}
+
+	&__image-box {
+		// left: 300px;
+	}
+
+	&__button-float {
+		position: absolute;
+		left: 50%;
+		top: 100%;
+		transform: translate(-50%, -50%);
+	}
+}

@@ -62,7 +62,7 @@
 		<!-- start line header: styles in layout/header -->
 		<header class="header bg-white">
 			<div
-				class="container d-flex justify-content-between align-items-center"
+				class="container d-flex justify-content-between align-items-center h-100"
 			>
 				<!-- start logo -->
 				<div>
@@ -82,7 +82,7 @@
 
 				<!-- if active link -> class = text-danger-1 -->
 				<!-- if not active link -> class = text-secondary-1 -->
-				<nav class="header__nav d-flex align-items-center">
+				<nav class="header__nav d-flex align-items-center h-100">
 					<!-- start line menu -->
 					<ul class="nav">
 						<li class="nav-item">
@@ -119,23 +119,23 @@
 					<!-- end line menu -->
 
 					<!-- profile -->
-					<a href="#">
-						<span
-							data-icon="profile"
-							class="ml-4 cursor-pointer"
-							data-toggle="tooltip"
-							title="Profile"
-						></span>
+					<a
+						href="#"
+						class="ml-4 cursor-pointer"
+						data-toggle="tooltip"
+						title="Profile"
+					>
+						<span data-icon="profile"></span>
 					</a>
 
 					<!-- bag -->
-					<a href="#">
-						<span
-							data-icon="bag"
-							class="ml-3 cursor-pointer"
-							data-toggle="tooltip"
-							title="Bag"
-						></span
+					<a
+						href="#"
+						class="ml-3 cursor-pointer"
+						data-toggle="tooltip"
+						title="Bag"
+					>
+						<span data-icon="bag"></span
 					></a>
 
 					<!-- change language -->
@@ -151,6 +151,62 @@
 			</div>
 		</header>
 		<!-- end line header -->
+
+		<!-- start line main tag -->
+		<main>
+			<!-- start line section description: styles in sections/description -->
+			<section class="s-description position-relative">
+				<div
+					class="d-flex justify-content-between align-items-center container h-100"
+				>
+					<!-- start line content description -->
+					<div class="s-description__content">
+						<p class="text-white">Omelette & Cie</p>
+
+						<h3 class="text-white font-weight-bold mt-3">
+							Hot, tasty food will reach you in 20mins
+						</h3>
+
+						<p class="text-light mt-2 pt-2">
+							Tell us what you want to eat?
+						</p>
+
+						<a
+							href="#"
+							class="btn rounded-high font-weight-bold bg-warning-gradient text-white py-normal px-normal mt-4"
+							>Order Now</a
+						>
+					</div>
+					<!-- end line content description -->
+
+					<!-- start line image box description -->
+					<div class="s-description__image-box position-relative">
+						<img
+							src="assets/uploads/images/sections/descriptioons/hero-image.png"
+							alt="hero"
+							width="801"
+							height="702"
+							draggable="false"
+						/>
+					</div>
+					<!-- end line image box description -->
+				</div>
+
+				<a
+					href="#"
+					class="s-description__button-float font-weight-bold btn rounded-high bg-danger-1 text-white py-normal px-normal"
+					>See Our Menu</a
+				>
+			</section>
+			<!-- end line section description -->
+		</main>
+		<!-- end line main tag -->
+
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
 
 		<script src="assets/scripts/jquery.min.js"></script>
 		<script src="assets/scripts/popper.min.js"></script>
