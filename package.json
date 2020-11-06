@@ -4,9 +4,9 @@
 	"description": "Omelette project",
 	"main": "index.js",
 	"scripts": {
-		"format": "prettier \"src/**/*.{js,html,scss}\" --write",
-		"eslint": "eslint \"src/**/*.{html,js}\"",
-		"eslint:fix": "eslint \"src/**/*.{html,js}\"",
+		"format": "prettier \"**/*.{js,html,scss}\" --write",
+		"eslint": "eslint \"**/*.{html,js}\"",
+		"eslint:fix": "eslint \"**/*.{html,js}\"",
 		"sass:compile": "sass --watch src/assets/styles/scss/main.scss:src/assets/styles/scss/main.css"
 	},
 	"repository": {
@@ -38,6 +38,6 @@
 		}
 	},
 	"lint-staged": {
-		"src/**/*": "prettier \"src/**/*.{js,html,scss}\" --write --ignore-unknown"
+		"src/**/*": "prettier \"**/*.{js,html,scss}\" --write --ignore-unknown"
 	}
 }
