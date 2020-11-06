@@ -35,4 +35,43 @@
 	}
 }
 
+.text-success-1 {
+	color: $success-1;
+
+	&:hover {
+		color: $success-1;
+	}
+}
+
+.text-dark-1 {
+	color: $dark-1;
+
+	&:hover {
+		color: $dark-1;
+	}
+}
+
 // Background
+.bg-secondary-1 {
+	background-color: $secondary-1;
+}
+
+.bg-secondary-2 {
+	background-color: $secondary-2;
+}
+
+.bg-secondary-3 {
+	background-color: $secondary-3;
+}
+
+.bg-danger-1 {
+	background-color: $danger-1;
+}
+
+.bg-success-1 {
+	background-color: $success-1;
+}
+
+.bg-dark-1 {
+	background-color: $dark-1;
+}

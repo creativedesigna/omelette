@@ -58,8 +58,62 @@ ol {
   color: #ef4129;
 }
 
+.text-success-1 {
+  color: #28a745;
+}
+.text-success-1:hover {
+  color: #28a745;
+}
+
+.text-dark-1 {
+  color: #252b42;
+}
+.text-dark-1:hover {
+  color: #252b42;
+}
+
+.bg-secondary-1 {
+  background-color: #e5e5e5;
+}
+
+.bg-secondary-2 {
+  background-color: #737373;
+}
+
+.bg-secondary-3 {
+  background-color: #f8f9fa;
+}
+
+.bg-danger-1 {
+  background-color: #ef4129;
+}
+
+.bg-success-1 {
+  background-color: #28a745;
+}
+
+.bg-dark-1 {
+  background-color: #252b42;
+}
+
 .top-nav {
   border-bottom: 1px solid #e5e5e5;
+}
+.top-nav__working-hours {
+  border-radius: 12.5px;
+  height: 25px;
+  font-size: 12px;
+}
+.top-nav__working-hours_text {
+  height: 100%;
+  border-radius: 12.5px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-nav__working-hours_time {
+  padding: 0 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
