@@ -5,3 +5,6 @@
 
 # css
 /src/assets/styles/bootstrap.min.css
+
+/node_modules
+
