@@ -1,0 +1,10 @@
+.s-image-carousel {
+	height: 322px;
+	overflow: hidden;
+
+	&__item {
+		img {
+			height: 400px;
+		}
+	}
+}

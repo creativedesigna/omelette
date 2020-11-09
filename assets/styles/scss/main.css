@@ -253,4 +253,12 @@ ol {
   opacity: 0.8;
 }
 
+.s-image-carousel {
+  height: 322px;
+  overflow: hidden;
+}
+.s-image-carousel__item img {
+  height: 400px;
+}
+
 /*# sourceMappingURL=main.css.map */
