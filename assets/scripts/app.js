@@ -7,7 +7,7 @@ function initialize() {
 
 	$(".owl-carousel").owlCarousel({
 		items: 1,
-		autoHeight: false,
+		autoHeight: true,
 		loop: true,
 		autoplay: true,
 		autoplayTimeout: 4000,

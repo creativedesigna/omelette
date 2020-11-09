@@ -254,11 +254,11 @@ ol {
 }
 
 .s-image-carousel {
-  height: 322px;
+  height: 350px;
   overflow: hidden;
 }
 .s-image-carousel__item img {
-  height: 400px;
+  height: 350px;
 }
 
 /*# sourceMappingURL=main.css.map */
