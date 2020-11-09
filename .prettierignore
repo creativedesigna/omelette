@@ -1,10 +1,10 @@
 # js
-/src/assets/scripts/jquery.min.js
-/src/assets/scripts/bootstrap.min.js
-/src/assets/scripts/popper.min.js
+/assets/scripts/jquery.min.js
+/assets/scripts/bootstrap.min.js
+/assets/scripts/popper.min.js
 
 # css
-/src/assets/styles/bootstrap.min.css
+/assets/styles/bootstrap.min.css
 
 /node_modules
 

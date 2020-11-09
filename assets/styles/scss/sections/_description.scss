@@ -3,12 +3,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 750px;
 	width: 100%;
 	position: relative;
+	height: 750px;
 
 	&__content {
-		min-width: 600px;
+		max-width: 100%;
 
 		p {
 			font-size: 24px;
@@ -17,10 +17,16 @@
 		h3 {
 			font-size: 58px;
 		}
+
+		@include media("min", "lg") {
+			min-width: 600px;
+		}
 	}
 
 	&__image-box {
-		// left: 300px;
+		@include media("max", "md") {
+			display: none;
+		}
 	}
 
 	&__button-float {

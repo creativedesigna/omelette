@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 .header {
-	height: 105px;
+	min-height: 105px;
 
 	&__nav {
 		align-items: center !important;
@@ -19,6 +19,41 @@
 					}
 				}
 			}
+		}
+
+		&_mobile-menu-icon {
+			cursor: pointer;
+
+			& > div {
+				width: 30px;
+				height: 3px;
+				background-color: $dark-1;
+				border-radius: 10px;
+				transition: 0.3s;
+
+				&:not(:first-child) {
+					margin-top: 4px;
+				}
+			}
+
+			// &-active {
+			// 	& > div {
+			// 		&:nth-child(1) {
+			// 			transform: rotate(45deg);
+			// 		}
+
+			// 		&:nth-child(2) {
+			// 			display: none;
+			// 		}
+
+			// 		&:nth-child(3) {
+			// 			transform: rotate(-45deg);
+			// 			margin-top: 0;
+			// 			position: relative;
+			// 			bottom: 3px;
+			// 		}
+			// 	}
+			// }
 		}
 	}
 }

@@ -9,14 +9,22 @@
 		&_text {
 			height: 100%;
 			border-radius: 12.5px;
-			padding: 0 30px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			padding: 0 10px;
+
+			@include media("min", "md") {
+				padding: 0 30px;
+			}
 		}
 
 		&_time {
 			padding: 0 30px;
+		}
+
+		@include media("max", "sm") {
+			width: 100%;
 		}
 	}
 }

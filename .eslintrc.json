@@ -22,8 +22,8 @@
 		"guard-for-in": "off",
 		"class-methods-use-this": "off",
 		"no-unused-vars": "error",
-		"constructor-super": "error",
-		"no-this-before-super": "error",
+		"constructor-super": "off",
+		"no-this-before-super": "off",
 		"no-empty": "warn",
 		"no-console": "off",
 		"quotes": "error"
