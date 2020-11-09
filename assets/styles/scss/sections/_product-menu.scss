@@ -1,0 +1,39 @@
+.s-product-menu {
+	padding: 45px 0 0 0;
+
+	&__menu {
+		&:not(:first-child) {
+			padding-left: 0 !important;
+		}
+
+		&:not(:last-child) {
+			padding-right: 0 !important;
+		}
+
+		li {
+			padding: 0 25px;
+			margin-bottom: 45px;
+
+			a {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-decoration: none;
+				color: $dark-1;
+				transition: 0.2s;
+
+				h4 {
+					font-size: 24px;
+					font-weight: bold;
+					text-transform: uppercase;
+					margin-top: 7px;
+				}
+
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}
