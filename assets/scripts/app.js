@@ -1,4 +1,4 @@
-// const mobileMenuIcon = document.querySelector("#mobile-menu-icon");
+const mobileMenuIcon = document.querySelector("#mobile-menu-icon");
 
 function initialize() {
 	$(function () {
@@ -27,13 +27,15 @@ function initialize() {
 }
 
 // # mobile menu icon click handler
-// function clickMobileMenuIconHandler() {
-// 	mobileMenuIcon.classList.toggle("header__nav_mobile-men	-icon-active");
-// }
+function clickMobileMenuIconHandler() {
+	mobileMenuIcon.classList.toggle("header__nav_mobile-menu-icon-active");
+
+	$(".header__nav > ul").slideToggle(250);
+}
 
 $(document).ready(function () {
 	initialize();
 
 	// # mobile menu icon run click handler
-	// mobileMenuIcon.addEventListener("click", clickMobileMenuIconHandler);
+	mobileMenuIcon.addEventListener("click", clickMobileMenuIconHandler);
 });

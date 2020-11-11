@@ -4,6 +4,7 @@
 
 .header {
 	min-height: 105px;
+	position: relative;
 
 	&__nav {
 		align-items: center !important;
@@ -16,6 +17,34 @@
 
 					&:hover {
 						transform: scale(0.9);
+					}
+				}
+			}
+
+			@include media("max", "md") {
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 100%;
+				z-index: 10;
+				width: 100%;
+				background-color: #fff;
+
+				li {
+					width: 100%;
+					border-top: 1px solid $secondary-1;
+					padding: 0 !important;
+
+					a {
+						font-size: 18px;
+						padding: 20px 0;
+						font-weight: bold;
+						text-align: center;
+
+						&:hover {
+							transform: scale(1);
+							background-color: $secondary-1;
+						}
 					}
 				}
 			}
@@ -36,24 +65,24 @@
 				}
 			}
 
-			// &-active {
-			// 	& > div {
-			// 		&:nth-child(1) {
-			// 			transform: rotate(45deg);
-			// 		}
+			&-active {
+				& > div {
+					&:nth-child(1) {
+						transform: rotate(45deg);
+					}
 
-			// 		&:nth-child(2) {
-			// 			display: none;
-			// 		}
+					&:nth-child(2) {
+						display: none;
+					}
 
-			// 		&:nth-child(3) {
-			// 			transform: rotate(-45deg);
-			// 			margin-top: 0;
-			// 			position: relative;
-			// 			bottom: 3px;
-			// 		}
-			// 	}
-			// }
+					&:nth-child(3) {
+						transform: rotate(-45deg);
+						margin-top: 0;
+						position: relative;
+						bottom: 3px;
+					}
+				}
+			}
 		}
 	}
 }
