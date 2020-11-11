@@ -5,13 +5,24 @@ function initialize() {
 		$("[data-toggle='tooltip']").tooltip({ trigger: "hover" });
 	});
 
-	$(".image-carouse").owlCarousel({
+	$(".image-carousel").owlCarousel({
 		items: 1,
 		autoHeight: true,
 		loop: true,
 		autoplay: true,
 		autoplayTimeout: 4000,
 		autoplayHoverPause: true,
+	});
+
+	$(".s-comments__carousel").owlCarousel({
+		items: 1,
+		autoHeight: true,
+		autoplay: true,
+		autoplayHoverPause: true,
+		autoplayTimeout: 4000,
+		loop: true,
+		margin: 100,
+		dots: true,
 	});
 }
 
