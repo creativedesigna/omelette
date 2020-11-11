@@ -140,13 +140,13 @@ ol {
 }
 
 .py-normal {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .px-normal {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .fs-16 {
@@ -324,6 +324,7 @@ ol {
   padding: 30px 25px 0 25px;
   max-width: 1392px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 .popular-products__products-container .card {
   border-radius: 30px;
