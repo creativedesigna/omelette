@@ -38,4 +38,6 @@ $(document).ready(function () {
 
 	// # mobile menu icon run click handler
 	mobileMenuIcon.addEventListener("click", clickMobileMenuIconHandler);
+
+	$("body").scrollTop(document.body.scrollHeight);
 });

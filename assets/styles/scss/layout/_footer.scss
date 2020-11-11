@@ -1,3 +1,104 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.footer {
+	min-height: 478px;
+
+	&__image-chef {
+		position: absolute;
+		left: 0;
+		top: -129px;
+		width: 50%;
+		height: calc(478px + 129px);
+
+		@include media("min", "xl") {
+			width: 500px;
+		}
+	}
+
+	&__content {
+		position: relative;
+		list-style: none;
+		width: 1000px;
+
+		&_menu {
+			width: 100%;
+
+			&-main {
+				@include media("min", "sm") {
+					width: 100%;
+				}
+
+				@include media("min", "lg") {
+					width: auto;
+				}
+			}
+
+			& div > ul {
+				@include media("max", "sm") {
+					flex-direction: column;
+				}
+
+				& > li {
+					margin-top: 50px;
+
+					ul {
+						margin-top: 15px;
+
+						li {
+							margin-top: 10px;
+						}
+					}
+
+					padding-left: 30px;
+					@include media("min", "lg") {
+						&:not(:first-child) {
+							margin-left: 70px;
+						}
+					}
+				}
+			}
+		}
+
+		&_social {
+			display: flex;
+
+			&-container {
+				margin-top: 90px;
+
+				@include media("max", "md") {
+					width: 100%;
+					margin-top: 50px;
+				}
+			}
+
+			&-icon {
+				display: flex;
+				background-color: $danger-1;
+				width: 44px;
+				height: 44px;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+			}
+
+			a {
+				&:not(:first-child) {
+					margin-left: 10px;
+				}
+			}
+		}
+
+		@include media("max", "md") {
+			padding-top: 15px;
+		}
+
+		@include media("min", "xl") {
+			position: absolute;
+			right: 40%;
+			top: 50%;
+			transform: translate(50%, -50%);
+		}
+	}
+}
