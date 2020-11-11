@@ -1,11 +1,11 @@
-const mobileMenuIcon = document.querySelector("#mobile-menu-icon");
+// const mobileMenuIcon = document.querySelector("#mobile-menu-icon");
 
 function initialize() {
 	$(function () {
-		$('[data-toggle="tooltip"]').tooltip({ trigger: "hover" });
+		$("[data-toggle='tooltip']").tooltip({ trigger: "hover" });
 	});
 
-	$(".owl-carousel").owlCarousel({
+	$(".image-carouse").owlCarousel({
 		items: 1,
 		autoHeight: true,
 		loop: true,

@@ -27,6 +27,22 @@
 	}
 }
 
+.text-secondary-4 {
+	color: $secondary-4;
+
+	&:hover {
+		color: $secondary-4;
+	}
+}
+
+.text-secondary-5 {
+	color: $secondary-5;
+
+	&:hover {
+		color: $secondary-5;
+	}
+}
+
 .text-danger-1 {
 	color: $danger-1;
 
@@ -48,6 +64,14 @@
 
 	&:hover {
 		color: $dark-1;
+	}
+}
+
+.text-black {
+	color: $black;
+
+	&:hover {
+		color: $black;
 	}
 }
 
@@ -107,4 +131,21 @@
 .px-normal {
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+// font-size
+.fs-16 {
+	font-size: 16px;
+}
+
+.fs-18 {
+	font-size: 18px;
+}
+
+.fs-20 {
+	font-size: 20px;
+}
+
+.fs-24 {
+	font-size: 24px;
 }
