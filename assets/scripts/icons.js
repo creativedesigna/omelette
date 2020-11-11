@@ -33,13 +33,20 @@
 	});
 
 	if (iconNameElements.length >= 1) {
+		let prevNumber = 0;
+
 		iconNameElements.forEach((iconNameElement, firstIndex) => {
+			prevNumber += iconNameElement.length;
+
 			iconNameElement.forEach((spanEl, secondIndex) => {
+				const findIndex =
+					secondIndex + prevNumber - iconNameElement.length;
+
 				const getIconSvg = getIcon(
 					iconNames[firstIndex],
-					iconWidths[firstIndex + secondIndex],
-					iconHeights[firstIndex + secondIndex],
-					iconFills[firstIndex + secondIndex]
+					iconWidths[findIndex],
+					iconHeights[findIndex],
+					iconFills[findIndex]
 				);
 
 				spanEl.innerHTML = getIconSvg;
@@ -89,6 +96,29 @@ function getIcon(iconName, width, height, fillColor) {
 <path d="M17.56 21C17.4001 21.0006 17.2423 20.9629 17.1 20.89L12 18.22L6.9 20.89C6.73439 20.9771 6.54768 21.0159 6.36108 21.0022C6.17448 20.9884 5.99548 20.9226 5.84443 20.8122C5.69338 20.7018 5.57634 20.5512 5.50661 20.3776C5.43689 20.2039 5.41727 20.0142 5.45 19.83L6.45 14.2L2.33 10.2C2.19813 10.0708 2.10523 9.90709 2.0619 9.72762C2.01857 9.54816 2.02656 9.36012 2.08494 9.18497C2.14332 9.00982 2.24976 8.8546 2.3921 8.73703C2.53445 8.61945 2.70697 8.54424 2.89 8.51999L8.59 7.68999L11.1 2.55999C11.1819 2.39092 11.3097 2.24833 11.4689 2.14856C11.6281 2.0488 11.8121 1.99588 12 1.99588C12.1879 1.99588 12.3719 2.0488 12.5311 2.14856C12.6903 2.24833 12.8181 2.39092 12.9 2.55999L15.44 7.67999L21.14 8.50999C21.323 8.53424 21.4956 8.60945 21.6379 8.72703C21.7802 8.8446 21.8867 8.99982 21.9451 9.17497C22.0034 9.35012 22.0114 9.53816 21.9681 9.71762C21.9248 9.89709 21.8319 10.0608 21.7 10.19L17.58 14.19L18.58 19.82C18.609 19.9675 18.6041 20.1197 18.5656 20.265C18.527 20.4103 18.4559 20.5449 18.3576 20.6586C18.2593 20.7723 18.1364 20.8622 17.9982 20.9213C17.86 20.9805 17.7101 21.0074 17.56 21Z" fill="${
 				fillColor || "#FFCC33"
 			}"/>
+</svg>
+`;
+
+		case "video":
+			return `<svg width="${width || 32}" height="${
+				width || 32
+			}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M20.6308 13.131C20.5743 13.189 20.3609 13.437 20.1622 13.641C18.9971 14.924 15.9576 17.024 14.3668 17.665C14.1252 17.768 13.5144 17.986 13.188 18C12.8753 18 12.5772 17.928 12.2927 17.782C11.9381 17.578 11.6537 17.257 11.4978 16.878C11.3975 16.615 11.2416 15.828 11.2416 15.814C11.0857 14.953 11 13.554 11 12.008C11 10.535 11.0857 9.193 11.2133 8.319C11.228 8.305 11.3838 7.327 11.5543 6.992C11.867 6.38 12.4778 6 13.1315 6H13.188C13.6137 6.015 14.509 6.395 14.509 6.409C16.0141 7.051 18.9834 9.048 20.1768 10.375C20.1768 10.375 20.5129 10.716 20.659 10.929C20.887 11.235 21 11.614 21 11.993C21 12.416 20.8724 12.81 20.6308 13.131Z" fill="${
+				fillColor || "#EF4129"
+			}"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="32" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
 </svg>
 `;
 

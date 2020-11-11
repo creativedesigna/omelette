@@ -75,6 +75,13 @@ ol {
   color: #4f5665;
 }
 
+.text-secondary-7 {
+  color: #bdbdbd;
+}
+.text-secondary-7:hover {
+  color: #bdbdbd;
+}
+
 .text-danger-1 {
   color: #ef4129;
 }
@@ -134,6 +141,10 @@ ol {
   background-color: #252b42;
 }
 
+.bg-dark-5 {
+  background-color: #181818;
+}
+
 .bg-warning-gradient {
   background-image: linear-gradient(#ffd200, #ffa700);
 }
@@ -161,6 +172,10 @@ ol {
 .px-normal {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.fs-12 {
+  font-size: 12px;
 }
 
 .fs-14 {
@@ -509,6 +524,30 @@ ol {
   .s-comments {
     padding: 100px 0;
   }
+}
+
+.s-latest-news {
+  padding: 40px 0 170px 0;
+  max-width: 1392px;
+  margin: 0 auto;
+}
+.s-latest-news__cards {
+  margin: 60px 0 30px 0;
+}
+.s-latest-news__cards .card {
+  border-radius: 30px;
+  width: 330px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.s-latest-news__cards .card__image img {
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  height: 202px;
+}
+.s-latest-news__cards .card-body p {
+  margin-bottom: 30px !important;
 }
 
 /*# sourceMappingURL=main.css.map */
