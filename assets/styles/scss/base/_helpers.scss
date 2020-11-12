@@ -175,6 +175,11 @@
 .px-normal {
 	padding-left: 50px;
 	padding-right: 50px;
+
+	@include media("max", "sm") {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 // font-size
@@ -207,6 +212,6 @@
 	font-weight: bold;
 }
 
-.overflow-x {
+.overflow-x-hidden {
 	overflow-x: hidden;
 }

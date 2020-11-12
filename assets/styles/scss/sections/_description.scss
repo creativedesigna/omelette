@@ -7,6 +7,11 @@
 	position: relative;
 	height: 750px;
 
+	&__container {
+		height: 780px;
+		overflow-y: hidden;
+	}
+
 	&__content {
 		max-width: 100%;
 

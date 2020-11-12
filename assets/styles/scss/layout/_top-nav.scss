@@ -14,6 +14,10 @@
 			align-items: center;
 			padding: 0 10px;
 
+			@media (max-width: 356px) {
+				display: none !important;
+			}
+
 			@include media("min", "md") {
 				padding: 0 30px;
 			}
@@ -21,6 +25,11 @@
 
 		&_time {
 			padding: 0 30px;
+
+			@media (max-width: 356px) {
+				text-align: center;
+				width: 100%;
+			}
 		}
 
 		@include media("max", "sm") {
