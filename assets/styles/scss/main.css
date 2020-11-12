@@ -342,6 +342,15 @@ ol {
 .footer__content_menu div > ul > li ul li {
   margin-top: 10px;
 }
+.footer__content_menu div > ul > li ul li a {
+  transition: 0.3s;
+}
+.footer__content_menu div > ul > li ul li a:hover {
+  opacity: 0.8;
+}
+.footer__content_menu div > ul > li ul li a:focus {
+  opacity: 0.7;
+}
 @media (min-width: 992px) {
   .footer__content_menu div > ul > li:not(:first-child) {
     margin-left: 70px;
@@ -367,6 +376,10 @@ ol {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: 0.3s;
+}
+.footer__content_social-icon:hover {
+  opacity: 0.7;
 }
 .footer__content_social a:not(:first-child) {
   margin-left: 10px;
