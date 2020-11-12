@@ -374,15 +374,36 @@
 					<div
 						class="popular-products__btn-group flex-sm-column flex-lg-row container d-flex justify-content-lg-between justify-content-sm-center align-items-center flex-wrap"
 					>
-						<a href="#" class="btn">pizza</a>
-
-						<a href="#" class="btn">breakfast</a>
-
-						<a href="#" class="btn">lunch</a>
+						<a
+							href="#"
+							class="btn"
+							data-tab-name="product-pizza"
+							data-tab-group-name="popular-product"
+							data-tab-active="true"
+							>pizza</a
+						>
 
 						<a
 							href="#"
-							class="btn popular-products__btn-group_active-btn"
+							class="btn"
+							data-tab-name="product-breakfast"
+							data-tab-group-name="popular-product"
+							>breakfast</a
+						>
+
+						<a
+							href="#"
+							class="btn"
+							data-tab-name="product-lunch"
+							data-tab-group-name="popular-product"
+							>lunch</a
+						>
+
+						<a
+							href="#"
+							class="btn"
+							data-tab-name="product-dinner"
+							data-tab-group-name="popular-product"
 							>dinner</a
 						>
 					</div>
@@ -390,623 +411,718 @@
 
 					<!-- start popular products container -->
 					<div class="popular-products__products-container">
-						<div class="row">
-							<!-- start first one product -->
-							<div
-								class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
-								data-aos="fade-up"
-								data-aos-anchor-placement="center-bottom"
-							>
-								<div class="card">
-									<!-- <a href="#" class="text-decoration-none"> -->
-									<div class="card-body">
-										<!-- start image box in card -->
-										<div class="card__image-box">
-											<img
-												src="assets/uploads/images/sections/popular-products/1.png"
-												alt="1"
-												width="232"
-												height="245"
-												draggable="false"
-											/>
-										</div>
-										<!-- end image box in card -->
+						<div data-tab-group-name-item="popular-product">
+							<div class="row">
+								<!-- start first one product -->
+								<div
+									class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+									data-aos="fade-up"
+									data-aos-anchor-placement="center-bottom"
+								>
+									<div class="card">
+										<!-- <a href="#" class="text-decoration-none"> -->
+										<div class="card-body">
+											<!-- start image box in card -->
+											<div class="card__image-box">
+												<img
+													src="assets/uploads/images/sections/popular-products/1.png"
+													alt="1"
+													width="232"
+													height="245"
+													draggable="false"
+												/>
+											</div>
+											<!-- end image box in card -->
 
-										<!-- start star box in card -->
-										<div
-											class="d-flex justify-content-between align-items-center mt-3"
-										>
+											<!-- start star box in card -->
 											<div
-												class="d-flex align-items-center"
+												class="d-flex justify-content-between align-items-center mt-3"
 											>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
+												<div
+													class="d-flex align-items-center"
+												>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+														data-fill="#C9C9C9"
+													></span>
+												</div>
+
 												<span
-													data-icon="star"
-													data-fill="#C9C9C9"
-												></span>
+													class="text-secondary-4 font-weight-bold fs-16"
+												>
+													265 Cal
+												</span>
 											</div>
+											<!-- end star box in card -->
 
-											<span
-												class="text-secondary-4 font-weight-bold fs-16"
+											<h5
+												class="fs-18 font-weight-bold text-black"
 											>
-												265 Cal
-											</span>
-										</div>
-										<!-- end star box in card -->
+												Card Title
+											</h5>
 
-										<h5
-											class="fs-18 font-weight-bold text-black"
-										>
-											Card Title
-										</h5>
+											<p>
+												Card description. Lorem ipsum
+												dolor sit amet, consectetur elit
+												adipiscing, sed do eiusm tem
+												dolor sit amet, consectetur.
+											</p>
 
-										<p>
-											Card description. Lorem ipsum dolor
-											sit amet, consectetur elit
-											adipiscing, sed do eiusm tem dolor
-											sit amet, consectetur.
-										</p>
+											<div
+												class="d-flex justify-content-between align-items-center card__footer"
+											>
+												<div>
+													<del>$35.90</del>
+													<span class="ml-1"
+														>$23.90</span
+													>
+												</div>
 
-										<div
-											class="d-flex justify-content-between align-items-center card__footer"
-										>
-											<div>
-												<del>$35.90</del>
-												<span class="ml-1">$23.90</span>
+												<a
+													href="#"
+													class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+													>order</a
+												>
 											</div>
-
-											<a
-												href="#"
-												class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
-												>order</a
-											>
 										</div>
+										<!-- </a> -->
 									</div>
-									<!-- </a> -->
+								</div>
+								<!-- end first one product -->
+
+								<div
+									class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+									data-aos="fade-up"
+									data-aos-anchor-placement="center-bottom"
+								>
+									<div class="card">
+										<!-- <a href="#" class="text-decoration-none"> -->
+										<div class="card-body">
+											<!-- start image box in card -->
+											<div class="card__image-box">
+												<img
+													src="assets/uploads/images/sections/popular-products/1.png"
+													alt="1"
+													width="232"
+													height="245"
+													draggable="false"
+												/>
+											</div>
+											<!-- end image box in card -->
+
+											<!-- start star box in card -->
+											<div
+												class="d-flex justify-content-between align-items-center mt-3"
+											>
+												<div
+													class="d-flex align-items-center"
+												>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+														data-fill="#C9C9C9"
+													></span>
+												</div>
+
+												<span
+													class="text-secondary-4 font-weight-bold fs-16"
+												>
+													265 Cal
+												</span>
+											</div>
+											<!-- end star box in card -->
+
+											<h5
+												class="fs-18 font-weight-bold text-black"
+											>
+												Card Title
+											</h5>
+
+											<p>
+												Card description. Lorem ipsum
+												dolor sit amet, consectetur elit
+												adipiscing, sed do eiusm tem
+												dolor sit amet, consectetur.
+											</p>
+
+											<div
+												class="d-flex justify-content-between align-items-center card__footer"
+											>
+												<div>
+													<del>$35.90</del>
+													<span class="ml-1"
+														>$23.90</span
+													>
+												</div>
+
+												<a
+													href="#"
+													class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+													>order</a
+												>
+											</div>
+										</div>
+										<!-- </a> -->
+									</div>
+								</div>
+
+								<div
+									class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+									data-aos="fade-up"
+									data-aos-anchor-placement="center-bottom"
+								>
+									<div class="card">
+										<!-- <a href="#" class="text-decoration-none"> -->
+										<div class="card-body">
+											<!-- start image box in card -->
+											<div class="card__image-box">
+												<img
+													src="assets/uploads/images/sections/popular-products/1.png"
+													alt="1"
+													width="232"
+													height="245"
+													draggable="false"
+												/>
+											</div>
+											<!-- end image box in card -->
+
+											<!-- start star box in card -->
+											<div
+												class="d-flex justify-content-between align-items-center mt-3"
+											>
+												<div
+													class="d-flex align-items-center"
+												>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+														data-fill="#C9C9C9"
+													></span>
+												</div>
+
+												<span
+													class="text-secondary-4 font-weight-bold fs-16"
+												>
+													265 Cal
+												</span>
+											</div>
+											<!-- end star box in card -->
+
+											<h5
+												class="fs-18 font-weight-bold text-black"
+											>
+												Card Title
+											</h5>
+
+											<p>
+												Card description. Lorem ipsum
+												dolor sit amet, consectetur elit
+												adipiscing, sed do eiusm tem
+												dolor sit amet, consectetur.
+											</p>
+
+											<div
+												class="d-flex justify-content-between align-items-center card__footer"
+											>
+												<div>
+													<del>$35.90</del>
+													<span class="ml-1"
+														>$23.90</span
+													>
+												</div>
+
+												<a
+													href="#"
+													class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+													>order</a
+												>
+											</div>
+										</div>
+										<!-- </a> -->
+									</div>
+								</div>
+
+								<div
+									class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+									data-aos="fade-up"
+									data-aos-anchor-placement="center-bottom"
+								>
+									<div class="card">
+										<!-- <a href="#" class="text-decoration-none"> -->
+										<div class="card-body">
+											<!-- start image box in card -->
+											<div class="card__image-box">
+												<img
+													src="assets/uploads/images/sections/popular-products/1.png"
+													alt="1"
+													width="232"
+													height="245"
+													draggable="false"
+												/>
+											</div>
+											<!-- end image box in card -->
+
+											<!-- start star box in card -->
+											<div
+												class="d-flex justify-content-between align-items-center mt-3"
+											>
+												<div
+													class="d-flex align-items-center"
+												>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+														data-fill="#C9C9C9"
+													></span>
+												</div>
+
+												<span
+													class="text-secondary-4 font-weight-bold fs-16"
+												>
+													265 Cal
+												</span>
+											</div>
+											<!-- end star box in card -->
+
+											<h5
+												class="fs-18 font-weight-bold text-black"
+											>
+												Card Title
+											</h5>
+
+											<p>
+												Card description. Lorem ipsum
+												dolor sit amet, consectetur elit
+												adipiscing, sed do eiusm tem
+												dolor sit amet, consectetur.
+											</p>
+
+											<div
+												class="d-flex justify-content-between align-items-center card__footer"
+											>
+												<div>
+													<del>$35.90</del>
+													<span class="ml-1"
+														>$23.90</span
+													>
+												</div>
+
+												<a
+													href="#"
+													class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+													>order</a
+												>
+											</div>
+										</div>
+										<!-- </a> -->
+									</div>
+								</div>
+
+								<div
+									class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+									data-aos="fade-up"
+									data-aos-anchor-placement="center-bottom"
+								>
+									<div class="card">
+										<!-- <a href="#" class="text-decoration-none"> -->
+										<div class="card-body">
+											<!-- start image box in card -->
+											<div class="card__image-box">
+												<img
+													src="assets/uploads/images/sections/popular-products/1.png"
+													alt="1"
+													width="232"
+													height="245"
+													draggable="false"
+												/>
+											</div>
+											<!-- end image box in card -->
+
+											<!-- start star box in card -->
+											<div
+												class="d-flex justify-content-between align-items-center mt-3"
+											>
+												<div
+													class="d-flex align-items-center"
+												>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+														data-fill="#C9C9C9"
+													></span>
+												</div>
+
+												<span
+													class="text-secondary-4 font-weight-bold fs-16"
+												>
+													265 Cal
+												</span>
+											</div>
+											<!-- end star box in card -->
+
+											<h5
+												class="fs-18 font-weight-bold text-black"
+											>
+												Card Title
+											</h5>
+
+											<p>
+												Card description. Lorem ipsum
+												dolor sit amet, consectetur elit
+												adipiscing, sed do eiusm tem
+												dolor sit amet, consectetur.
+											</p>
+
+											<div
+												class="d-flex justify-content-between align-items-center card__footer"
+											>
+												<div>
+													<del>$35.90</del>
+													<span class="ml-1"
+														>$23.90</span
+													>
+												</div>
+
+												<a
+													href="#"
+													class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+													>order</a
+												>
+											</div>
+										</div>
+										<!-- </a> -->
+									</div>
+								</div>
+
+								<div
+									class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+									data-aos="fade-up"
+									data-aos-anchor-placement="center-bottom"
+								>
+									<div class="card">
+										<!-- <a href="#" class="text-decoration-none"> -->
+										<div class="card-body">
+											<!-- start image box in card -->
+											<div class="card__image-box">
+												<img
+													src="assets/uploads/images/sections/popular-products/1.png"
+													alt="1"
+													width="232"
+													height="245"
+													draggable="false"
+												/>
+											</div>
+											<!-- end image box in card -->
+
+											<!-- start star box in card -->
+											<div
+												class="d-flex justify-content-between align-items-center mt-3"
+											>
+												<div
+													class="d-flex align-items-center"
+												>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+														data-fill="#C9C9C9"
+													></span>
+												</div>
+
+												<span
+													class="text-secondary-4 font-weight-bold fs-16"
+												>
+													265 Cal
+												</span>
+											</div>
+											<!-- end star box in card -->
+
+											<h5
+												class="fs-18 font-weight-bold text-black"
+											>
+												Card Title
+											</h5>
+
+											<p>
+												Card description. Lorem ipsum
+												dolor sit amet, consectetur elit
+												adipiscing, sed do eiusm tem
+												dolor sit amet, consectetur.
+											</p>
+
+											<div
+												class="d-flex justify-content-between align-items-center card__footer"
+											>
+												<div>
+													<del>$35.90</del>
+													<span class="ml-1"
+														>$23.90</span
+													>
+												</div>
+
+												<a
+													href="#"
+													class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+													>order</a
+												>
+											</div>
+										</div>
+										<!-- </a> -->
+									</div>
+								</div>
+
+								<div
+									class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+									data-aos="fade-up"
+									data-aos-anchor-placement="center-bottom"
+								>
+									<div class="card">
+										<!-- <a href="#" class="text-decoration-none"> -->
+										<div class="card-body">
+											<!-- start image box in card -->
+											<div class="card__image-box">
+												<img
+													src="assets/uploads/images/sections/popular-products/1.png"
+													alt="1"
+													width="232"
+													height="245"
+													draggable="false"
+												/>
+											</div>
+											<!-- end image box in card -->
+
+											<!-- start star box in card -->
+											<div
+												class="d-flex justify-content-between align-items-center mt-3"
+											>
+												<div
+													class="d-flex align-items-center"
+												>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+														data-fill="#C9C9C9"
+													></span>
+												</div>
+
+												<span
+													class="text-secondary-4 font-weight-bold fs-16"
+												>
+													265 Cal
+												</span>
+											</div>
+											<!-- end star box in card -->
+
+											<h5
+												class="fs-18 font-weight-bold text-black"
+											>
+												Card Title
+											</h5>
+
+											<p>
+												Card description. Lorem ipsum
+												dolor sit amet, consectetur elit
+												adipiscing, sed do eiusm tem
+												dolor sit amet, consectetur.
+											</p>
+
+											<div
+												class="d-flex justify-content-between align-items-center card__footer"
+											>
+												<div>
+													<del>$35.90</del>
+													<span class="ml-1"
+														>$23.90</span
+													>
+												</div>
+
+												<a
+													href="#"
+													class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+													>order</a
+												>
+											</div>
+										</div>
+										<!-- </a> -->
+									</div>
+								</div>
+
+								<div
+									class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+									data-aos="fade-up"
+									data-aos-anchor-placement="center-bottom"
+								>
+									<div class="card">
+										<!-- <a href="#" class="text-decoration-none"> -->
+										<div class="card-body">
+											<!-- start image box in card -->
+											<div class="card__image-box">
+												<img
+													src="assets/uploads/images/sections/popular-products/1.png"
+													alt="1"
+													width="232"
+													height="245"
+													draggable="false"
+												/>
+											</div>
+											<!-- end image box in card -->
+
+											<!-- start star box in card -->
+											<div
+												class="d-flex justify-content-between align-items-center mt-3"
+											>
+												<div
+													class="d-flex align-items-center"
+												>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+													></span>
+													<span
+														data-icon="star"
+														data-fill="#C9C9C9"
+													></span>
+												</div>
+
+												<span
+													class="text-secondary-4 font-weight-bold fs-16"
+												>
+													265 Cal
+												</span>
+											</div>
+											<!-- end star box in card -->
+
+											<h5
+												class="fs-18 font-weight-bold text-black"
+											>
+												Card Title
+											</h5>
+
+											<p>
+												Card description. Lorem ipsum
+												dolor sit amet, consectetur elit
+												adipiscing, sed do eiusm tem
+												dolor sit amet, consectetur.
+											</p>
+
+											<div
+												class="d-flex justify-content-between align-items-center card__footer"
+											>
+												<div>
+													<del>$35.90</del>
+													<span class="ml-1"
+														>$23.90</span
+													>
+												</div>
+
+												<a
+													href="#"
+													class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+													>order</a
+												>
+											</div>
+										</div>
+										<!-- </a> -->
+									</div>
 								</div>
 							</div>
-							<!-- end first one product -->
+						</div>
 
-							<div
-								class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
-								data-aos="fade-up"
-								data-aos-anchor-placement="center-bottom"
-							>
-								<div class="card">
-									<!-- <a href="#" class="text-decoration-none"> -->
-									<div class="card-body">
-										<!-- start image box in card -->
-										<div class="card__image-box">
-											<img
-												src="assets/uploads/images/sections/popular-products/1.png"
-												alt="1"
-												width="232"
-												height="245"
-												draggable="false"
-											/>
-										</div>
-										<!-- end image box in card -->
+						<div data-tab-group-name-item="popular-product">
+							tab 2
+						</div>
 
-										<!-- start star box in card -->
-										<div
-											class="d-flex justify-content-between align-items-center mt-3"
-										>
-											<div
-												class="d-flex align-items-center"
-											>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span
-													data-icon="star"
-													data-fill="#C9C9C9"
-												></span>
-											</div>
+						<div data-tab-group-name-item="popular-product">
+							tab 3
+						</div>
 
-											<span
-												class="text-secondary-4 font-weight-bold fs-16"
-											>
-												265 Cal
-											</span>
-										</div>
-										<!-- end star box in card -->
-
-										<h5
-											class="fs-18 font-weight-bold text-black"
-										>
-											Card Title
-										</h5>
-
-										<p>
-											Card description. Lorem ipsum dolor
-											sit amet, consectetur elit
-											adipiscing, sed do eiusm tem dolor
-											sit amet, consectetur.
-										</p>
-
-										<div
-											class="d-flex justify-content-between align-items-center card__footer"
-										>
-											<div>
-												<span>$23.90</span>
-											</div>
-
-											<a
-												href="#"
-												class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
-												>order</a
-											>
-										</div>
-									</div>
-									<!-- </a> -->
-								</div>
-							</div>
-
-							<div
-								class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
-								data-aos="fade-up"
-								data-aos-anchor-placement="center-bottom"
-							>
-								<div class="card">
-									<!-- <a href="#" class="text-decoration-none"> -->
-									<div class="card-body">
-										<!-- start image box in card -->
-										<div class="card__image-box">
-											<img
-												src="assets/uploads/images/sections/popular-products/1.png"
-												alt="1"
-												width="232"
-												height="245"
-												draggable="false"
-											/>
-										</div>
-										<!-- end image box in card -->
-
-										<!-- start star box in card -->
-										<div
-											class="d-flex justify-content-between align-items-center mt-3"
-										>
-											<div
-												class="d-flex align-items-center"
-											>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span
-													data-icon="star"
-													data-fill="#C9C9C9"
-												></span>
-											</div>
-
-											<span
-												class="text-secondary-4 font-weight-bold fs-16"
-											>
-												265 Cal
-											</span>
-										</div>
-										<!-- end star box in card -->
-
-										<h5
-											class="fs-18 font-weight-bold text-black"
-										>
-											Card Title
-										</h5>
-
-										<p>
-											Card description. Lorem ipsum dolor
-											sit amet, consectetur elit
-											adipiscing, sed do eiusm tem dolor
-											sit amet, consectetur.
-										</p>
-
-										<div
-											class="d-flex justify-content-between align-items-center card__footer"
-										>
-											<div>
-												<del>$35.90</del>
-												<span class="ml-1">$23.90</span>
-											</div>
-
-											<a
-												href="#"
-												class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
-												>order</a
-											>
-										</div>
-									</div>
-									<!-- </a> -->
-								</div>
-							</div>
-
-							<div
-								class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
-								data-aos="fade-up"
-								data-aos-anchor-placement="center-bottom"
-							>
-								<div class="card">
-									<!-- <a href="#" class="text-decoration-none"> -->
-									<div class="card-body">
-										<!-- start image box in card -->
-										<div class="card__image-box">
-											<img
-												src="assets/uploads/images/sections/popular-products/1.png"
-												alt="1"
-												width="232"
-												height="245"
-												draggable="false"
-											/>
-										</div>
-										<!-- end image box in card -->
-
-										<!-- start star box in card -->
-										<div
-											class="d-flex justify-content-between align-items-center mt-3"
-										>
-											<div
-												class="d-flex align-items-center"
-											>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span
-													data-icon="star"
-													data-fill="#C9C9C9"
-												></span>
-											</div>
-
-											<span
-												class="text-secondary-4 font-weight-bold fs-16"
-											>
-												265 Cal
-											</span>
-										</div>
-										<!-- end star box in card -->
-
-										<h5
-											class="fs-18 font-weight-bold text-black"
-										>
-											Card Title
-										</h5>
-
-										<p>
-											Card description. Lorem ipsum dolor
-											sit amet, consectetur elit
-											adipiscing, sed do eiusm tem dolor
-											sit amet, consectetur.
-										</p>
-
-										<div
-											class="d-flex justify-content-between align-items-center card__footer"
-										>
-											<div>
-												<del>$35.90</del>
-												<span class="ml-1">$23.90</span>
-											</div>
-
-											<a
-												href="#"
-												class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
-												>order</a
-											>
-										</div>
-									</div>
-									<!-- </a> -->
-								</div>
-							</div>
-
-							<div
-								class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
-								data-aos="fade-up"
-								data-aos-anchor-placement="center-bottom"
-							>
-								<div class="card">
-									<!-- <a href="#" class="text-decoration-none"> -->
-									<div class="card-body">
-										<!-- start image box in card -->
-										<div class="card__image-box">
-											<img
-												src="assets/uploads/images/sections/popular-products/1.png"
-												alt="1"
-												width="232"
-												height="245"
-												draggable="false"
-											/>
-										</div>
-										<!-- end image box in card -->
-
-										<!-- start star box in card -->
-										<div
-											class="d-flex justify-content-between align-items-center mt-3"
-										>
-											<div
-												class="d-flex align-items-center"
-											>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span
-													data-icon="star"
-													data-fill="#C9C9C9"
-												></span>
-											</div>
-
-											<span
-												class="text-secondary-4 font-weight-bold fs-16"
-											>
-												265 Cal
-											</span>
-										</div>
-										<!-- end star box in card -->
-
-										<h5
-											class="fs-18 font-weight-bold text-black"
-										>
-											Card Title
-										</h5>
-
-										<p>
-											Card description. Lorem ipsum dolor
-											sit amet, consectetur elit
-											adipiscing, sed do eiusm tem dolor
-											sit amet, consectetur.
-										</p>
-
-										<div
-											class="d-flex justify-content-between align-items-center card__footer"
-										>
-											<div>
-												<del>$35.90</del>
-												<span class="ml-1">$23.90</span>
-											</div>
-
-											<a
-												href="#"
-												class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
-												>order</a
-											>
-										</div>
-									</div>
-									<!-- </a> -->
-								</div>
-							</div>
-
-							<div
-								class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
-								data-aos="fade-up"
-								data-aos-anchor-placement="center-bottom"
-							>
-								<div class="card">
-									<!-- <a href="#" class="text-decoration-none"> -->
-									<div class="card-body">
-										<!-- start image box in card -->
-										<div class="card__image-box">
-											<img
-												src="assets/uploads/images/sections/popular-products/1.png"
-												alt="1"
-												width="232"
-												height="245"
-												draggable="false"
-											/>
-										</div>
-										<!-- end image box in card -->
-
-										<!-- start star box in card -->
-										<div
-											class="d-flex justify-content-between align-items-center mt-3"
-										>
-											<div
-												class="d-flex align-items-center"
-											>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span
-													data-icon="star"
-													data-fill="#C9C9C9"
-												></span>
-											</div>
-
-											<span
-												class="text-secondary-4 font-weight-bold fs-16"
-											>
-												265 Cal
-											</span>
-										</div>
-										<!-- end star box in card -->
-
-										<h5
-											class="fs-18 font-weight-bold text-black"
-										>
-											Card Title
-										</h5>
-
-										<p>
-											Card description. Lorem ipsum dolor
-											sit amet, consectetur elit
-											adipiscing, sed do eiusm tem dolor
-											sit amet, consectetur.
-										</p>
-
-										<div
-											class="d-flex justify-content-between align-items-center card__footer"
-										>
-											<div>
-												<del>$35.90</del>
-												<span class="ml-1">$23.90</span>
-											</div>
-
-											<a
-												href="#"
-												class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
-												>order</a
-											>
-										</div>
-									</div>
-									<!-- </a> -->
-								</div>
-							</div>
-
-							<div
-								class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
-								data-aos="fade-up"
-								data-aos-anchor-placement="center-bottom"
-							>
-								<div class="card">
-									<!-- <a href="#" class="text-decoration-none"> -->
-									<div class="card-body">
-										<!-- start image box in card -->
-										<div class="card__image-box">
-											<img
-												src="assets/uploads/images/sections/popular-products/1.png"
-												alt="1"
-												width="232"
-												height="245"
-												draggable="false"
-											/>
-										</div>
-										<!-- end image box in card -->
-
-										<!-- start star box in card -->
-										<div
-											class="d-flex justify-content-between align-items-center mt-3"
-										>
-											<div
-												class="d-flex align-items-center"
-											>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span
-													data-icon="star"
-													data-fill="#C9C9C9"
-												></span>
-											</div>
-
-											<span
-												class="text-secondary-4 font-weight-bold fs-16"
-											>
-												265 Cal
-											</span>
-										</div>
-										<!-- end star box in card -->
-
-										<h5
-											class="fs-18 font-weight-bold text-black"
-										>
-											Card Title
-										</h5>
-
-										<p>
-											Card description. Lorem ipsum dolor
-											sit amet, consectetur elit
-											adipiscing, sed do eiusm tem dolor
-											sit amet, consectetur.
-										</p>
-
-										<div
-											class="d-flex justify-content-between align-items-center card__footer"
-										>
-											<div>
-												<del>$35.90</del>
-												<span class="ml-1">$23.90</span>
-											</div>
-
-											<a
-												href="#"
-												class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
-												>order</a
-											>
-										</div>
-									</div>
-									<!-- </a> -->
-								</div>
-							</div>
-
-							<div
-								class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
-								data-aos="fade-up"
-								data-aos-anchor-placement="center-bottom"
-							>
-								<div class="card">
-									<!-- <a href="#" class="text-decoration-none"> -->
-									<div class="card-body">
-										<!-- start image box in card -->
-										<div class="card__image-box">
-											<img
-												src="assets/uploads/images/sections/popular-products/1.png"
-												alt="1"
-												width="232"
-												height="245"
-												draggable="false"
-											/>
-										</div>
-										<!-- end image box in card -->
-
-										<!-- start star box in card -->
-										<div
-											class="d-flex justify-content-between align-items-center mt-3"
-										>
-											<div
-												class="d-flex align-items-center"
-											>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span data-icon="star"></span>
-												<span
-													data-icon="star"
-													data-fill="#C9C9C9"
-												></span>
-											</div>
-
-											<span
-												class="text-secondary-4 font-weight-bold fs-16"
-											>
-												265 Cal
-											</span>
-										</div>
-										<!-- end star box in card -->
-
-										<h5
-											class="fs-18 font-weight-bold text-black"
-										>
-											Card Title
-										</h5>
-
-										<p>
-											Card description. Lorem ipsum dolor
-											sit amet, consectetur elit
-											adipiscing, sed do eiusm tem dolor
-											sit amet, consectetur.
-										</p>
-
-										<div
-											class="d-flex justify-content-between align-items-center card__footer"
-										>
-											<div>
-												<del>$35.90</del>
-												<span class="ml-1">$23.90</span>
-											</div>
-
-											<a
-												href="#"
-												class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
-												>order</a
-											>
-										</div>
-									</div>
-									<!-- </a> -->
-								</div>
-							</div>
+						<div data-tab-group-name-item="popular-product">
+							tab 4
 						</div>
 					</div>
 					<!-- end popular products container -->
