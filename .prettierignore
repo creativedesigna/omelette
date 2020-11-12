@@ -3,10 +3,12 @@
 /assets/scripts/bootstrap.min.js
 /assets/scripts/popper.min.js
 /assets/scripts/owl.carousel.min.js
+/assets/scripts/aos.js
 
 # css
 /assets/styles/bootstrap.min.css
 /assets/styles/owl.carousel.min.css
+/assets/styles/aos.css
 
 /node_modules
 

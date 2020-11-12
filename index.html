@@ -13,6 +13,7 @@
 		/>
 		<link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/styles/owl.carousel.min.css" />
+		<link rel="stylesheet" href="assets/styles/aos.css" />
 		<link rel="stylesheet" href="assets/styles/scss/main.css" />
 	</head>
 	<body>
@@ -80,6 +81,9 @@
 							draggable="false"
 							width="179"
 							height="97"
+							data-aos="flip-up"
+							data-aos-easing="linear"
+							data-aos-duration="500"
 						/>
 					</a>
 				</div>
@@ -177,51 +181,59 @@
 		<!-- start line main tag -->
 		<main>
 			<!-- start line section description: styles in sections/description -->
-			<section class="s-description position-relative">
-				<div
-					class="d-flex justify-content-between align-items-center container h-100"
-				>
-					<!-- start line content description -->
-					<div class="s-description__content">
-						<p class="text-white">Omelette & Cie</p>
-
-						<h3 class="text-white font-weight-bold mt-3">
-							Hot, tasty food will reach you in 20 min
-						</h3>
-
-						<p class="text-light mt-2 pt-2">
-							Tell us what you want to eat?
-						</p>
-
-						<a
-							href="#"
-							draggable="false"
-							class="btn rounded-high font-weight-bold bg-warning-gradient text-white py-normal px-normal mt-4"
-							>Order Now</a
+			<div class="overflow-x-hidden">
+				<section class="s-description position-relative">
+					<div
+						class="d-flex justify-content-between align-items-center container h-100"
+					>
+						<!-- start line content description -->
+						<div
+							class="s-description__content"
+							data-aos="fade-down"
+							data-aos-easing="linear"
+							data-aos-duration="500"
 						>
-					</div>
-					<!-- end line content description -->
+							<p class="text-white">Omelette & Cie</p>
 
-					<!-- start line image box description -->
-					<div class="s-description__image-box position-relative">
-						<img
-							src="assets/uploads/images/sections/descriptioons/hero-image.png"
-							alt="hero"
-							width="801"
-							height="702"
-							draggable="false"
-						/>
-					</div>
-					<!-- end line image box description -->
-				</div>
+							<h3 class="text-white font-weight-bold mt-3">
+								Hot, tasty food will reach you in 20 min
+							</h3>
 
-				<a
-					href="#"
-					draggable="false"
-					class="s-description__button-float font-weight-bold btn rounded-high bg-danger-1 text-white py-normal px-normal"
-					>See Our Menu</a
-				>
-			</section>
+							<p class="text-light mt-2 pt-2">
+								Tell us what you want to eat?
+							</p>
+
+							<a
+								href="#"
+								draggable="false"
+								class="btn rounded-high font-weight-bold bg-warning-gradient text-white py-normal px-normal mt-4"
+								>Order Now</a
+							>
+						</div>
+						<!-- end line content description -->
+
+						<!-- start line image box description -->
+						<div class="s-description__image-box position-relative">
+							<img
+								src="assets/uploads/images/sections/descriptioons/hero-image.png"
+								alt="hero"
+								width="801"
+								height="702"
+								data-aos="zoom-out-down"
+								draggable="false"
+							/>
+						</div>
+						<!-- end line image box description -->
+					</div>
+
+					<a
+						href="#"
+						draggable="false"
+						class="s-description__button-float font-weight-bold btn rounded-high bg-danger-1 text-white py-normal px-normal"
+						>See Our Menu</a
+					>
+				</section>
+			</div>
 			<!-- end line section description -->
 
 			<!-- start line section product menu: styles in sections/product-menu -->
@@ -230,7 +242,7 @@
 					class="s-product-menu__menu d-flex justify-content-center flex-wrap"
 				>
 					<!-- start one item product menu -->
-					<li>
+					<li data-aos="fade-right">
 						<a href="#" draggable="false">
 							<img
 								src="assets/uploads/images/sections/product-menu/fruits.png"
@@ -245,7 +257,7 @@
 					</li>
 					<!-- end one item product menu -->
 
-					<li>
+					<li data-aos="fade-down">
 						<a href="#" draggable="false">
 							<img
 								src="assets/uploads/images/sections/product-menu/taco.png"
@@ -259,7 +271,7 @@
 						</a>
 					</li>
 
-					<li>
+					<li data-aos="fade-down">
 						<a href="#" draggable="false">
 							<img
 								src="assets/uploads/images/sections/product-menu/egg.png"
@@ -273,7 +285,7 @@
 						</a>
 					</li>
 
-					<li>
+					<li data-aos="fade-left">
 						<a href="#" draggable="false">
 							<img
 								src="assets/uploads/images/sections/product-menu/burger.png"
@@ -351,7 +363,11 @@
 				<div class="popular-products__products-container">
 					<div class="row">
 						<!-- start first one product -->
-						<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
 							<div class="card">
 								<!-- <a href="#" class="text-decoration-none"> -->
 								<div class="card-body">
@@ -423,7 +439,11 @@
 						</div>
 						<!-- end first one product -->
 
-						<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
 							<div class="card">
 								<!-- <a href="#" class="text-decoration-none"> -->
 								<div class="card-body">
@@ -493,7 +513,11 @@
 							</div>
 						</div>
 
-						<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
 							<div class="card">
 								<!-- <a href="#" class="text-decoration-none"> -->
 								<div class="card-body">
@@ -564,7 +588,11 @@
 							</div>
 						</div>
 
-						<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
 							<div class="card">
 								<!-- <a href="#" class="text-decoration-none"> -->
 								<div class="card-body">
@@ -635,7 +663,11 @@
 							</div>
 						</div>
 
-						<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
 							<div class="card">
 								<!-- <a href="#" class="text-decoration-none"> -->
 								<div class="card-body">
@@ -706,7 +738,11 @@
 							</div>
 						</div>
 
-						<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
 							<div class="card">
 								<!-- <a href="#" class="text-decoration-none"> -->
 								<div class="card-body">
@@ -777,7 +813,11 @@
 							</div>
 						</div>
 
-						<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
 							<div class="card">
 								<!-- <a href="#" class="text-decoration-none"> -->
 								<div class="card-body">
@@ -848,7 +888,11 @@
 							</div>
 						</div>
 
-						<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
 							<div class="card">
 								<!-- <a href="#" class="text-decoration-none"> -->
 								<div class="card-body">
@@ -958,7 +1002,10 @@
 							<div
 								class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 mb-lg-0"
 							>
-								<div class="card bg-white">
+								<div
+									class="card bg-white"
+									data-aos="fade-right"
+								>
 									<div class="card-body">
 										<!-- start line card header -->
 										<div
@@ -1028,7 +1075,7 @@
 							<div
 								class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 mb-lg-0"
 							>
-								<div class="card bg-white">
+								<div class="card bg-white" data-aos="fade-up">
 									<div class="card-body">
 										<!-- start line card header -->
 										<div
@@ -1097,7 +1144,7 @@
 							<div
 								class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 mb-lg-0"
 							>
-								<div class="card bg-white">
+								<div class="card bg-white" data-aos="fade-left">
 									<div class="card-body">
 										<!-- start line card header -->
 										<div
@@ -1172,7 +1219,10 @@
 							<div
 								class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 mb-lg-0"
 							>
-								<div class="card bg-white">
+								<div
+									class="card bg-white"
+									data-aos="fade-right"
+								>
 									<div class="card-body">
 										<!-- start line card header -->
 										<div
@@ -1242,7 +1292,7 @@
 							<div
 								class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 mb-lg-0"
 							>
-								<div class="card bg-white">
+								<div class="card bg-white" data-aos="fade-up">
 									<div class="card-body">
 										<!-- start line card header -->
 										<div
@@ -1311,7 +1361,7 @@
 							<div
 								class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 mb-lg-0"
 							>
-								<div class="card bg-white">
+								<div class="card bg-white" data-aos="fade-left">
 									<div class="card-body">
 										<!-- start line card header -->
 										<div
@@ -1385,7 +1435,10 @@
 							<div
 								class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 mb-lg-0"
 							>
-								<div class="card bg-white">
+								<div
+									class="card bg-white"
+									data-aos="fade-right"
+								>
 									<div class="card-body">
 										<!-- start line card header -->
 										<div
@@ -1455,7 +1508,7 @@
 							<div
 								class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 mb-lg-0"
 							>
-								<div class="card bg-white">
+								<div class="card bg-white" data-aos="fade-up">
 									<div class="card-body">
 										<!-- start line card header -->
 										<div
@@ -1524,7 +1577,7 @@
 							<div
 								class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 mb-lg-0"
 							>
-								<div class="card bg-white">
+								<div class="card bg-white" data-aos="fade-left">
 									<div class="card-body">
 										<!-- start line card header -->
 										<div
@@ -1611,7 +1664,10 @@
 				<!-- start line cards latest news container -->
 				<div class="s-latest-news__cards row">
 					<!-- start line card in cards latest -->
-					<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+					<div
+						class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+						data-aos="zoom-in"
+					>
 						<div class="card">
 							<div class="card__image">
 								<img
@@ -1650,7 +1706,10 @@
 					</div>
 					<!-- end line card in cards latest -->
 
-					<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+					<div
+						class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+						data-aos="zoom-in"
+					>
 						<div class="card">
 							<div class="card__image">
 								<img
@@ -1688,7 +1747,10 @@
 						</div>
 					</div>
 
-					<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+					<div
+						class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+						data-aos="zoom-in"
+					>
 						<div class="card">
 							<div class="card__image">
 								<img
@@ -1726,7 +1788,10 @@
 						</div>
 					</div>
 
-					<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+					<div
+						class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4"
+						data-aos="zoom-in"
+					>
 						<div class="card">
 							<div class="card__image">
 								<img
@@ -1786,6 +1851,7 @@
 					alt="chef"
 					class="d-sm-none d-xl-block footer__image-chef"
 					draggable="false"
+					data-aos="fade-right"
 				/>
 
 				<div
@@ -1969,6 +2035,7 @@
 		<script src="assets/scripts/popper.min.js"></script>
 		<script src="assets/scripts/bootstrap.min.js"></script>
 		<script src="assets/scripts/owl.carousel.min.js"></script>
+		<script src="assets/scripts/aos.js"></script>
 		<script src="assets/scripts/icons.js"></script>
 		<script src="assets/scripts/app.js"></script>
 	</body>

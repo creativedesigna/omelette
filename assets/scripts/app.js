@@ -24,6 +24,10 @@ function initialize() {
 		margin: 100,
 		dots: true,
 	});
+
+	setTimeout(() => {
+		AOS.init({ once: true, duration: 250, easing: "linear" });
+	}, 200);
 }
 
 // # mobile menu icon click handler
