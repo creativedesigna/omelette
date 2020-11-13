@@ -130,6 +130,10 @@
 
 .bg-danger-1 {
 	background-color: $danger-1;
+
+	&:focus {
+		box-shadow: 0 0 0 0.2rem rgba(225,83,97,.5);
+	}
 }
 
 .bg-success-1 {
@@ -146,6 +150,10 @@
 
 .bg-warning-gradient {
 	background-image: linear-gradient($warning-1, $warning-2);
+
+        &:focus {
+                box-shadow: 0 0 0 0.2rem rgba(222,170,12,.5);
+        }
 }
 
 // cursor

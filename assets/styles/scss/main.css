@@ -145,6 +145,9 @@ ol {
 .bg-danger-1 {
   background-color: #ef4129;
 }
+.bg-danger-1:focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
 
 .bg-success-1 {
   background-color: #28a745;
@@ -160,6 +163,9 @@ ol {
 
 .bg-warning-gradient {
   background-image: linear-gradient(#ffd200, #ffa700);
+}
+.bg-warning-gradient:focus {
+  box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
 }
 
 .cursor-pointer {
@@ -543,6 +549,9 @@ ol {
   border: 1px solid #e5e5e5;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+.popular-products__btn-group .btn:focus {
+  box-shadow: none;
 }
 .popular-products__btn-group_active-btn {
   background-color: #ffc961;
