@@ -1,6 +1,12 @@
 .top-nav {
 	border-bottom: 1px solid $secondary-1;
 
+	@media (max-width: 356px) {
+		& > div {
+			justify-content: center !important;
+		}
+	}
+
 	&__working-hours {
 		border-radius: 12.5px;
 		height: 25px;

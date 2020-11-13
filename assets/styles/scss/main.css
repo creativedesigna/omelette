@@ -233,7 +233,7 @@ ol {
 }
 
 .header {
-  min-height: 105px;
+  padding: 10px 0;
   position: relative;
 }
 .header__nav {
@@ -301,14 +301,14 @@ ol {
 }
 
 .footer {
-  min-height: 478px;
+  min-height: 485px;
 }
 .footer__image-chef {
   position: absolute;
   left: 0;
   top: -129px;
   width: 50%;
-  height: calc(478px + 129px);
+  height: calc(485px + 129px);
 }
 @media (min-width: 1470px) {
   .footer__image-chef {
@@ -431,6 +431,11 @@ ol {
 
 .top-nav {
   border-bottom: 1px solid #e5e5e5;
+}
+@media (max-width: 356px) {
+  .top-nav > div {
+    justify-content: center !important;
+  }
 }
 .top-nav__working-hours {
   border-radius: 12.5px;
