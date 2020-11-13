@@ -25,9 +25,7 @@ function initialize() {
 		dots: true,
 	});
 
-	setTimeout(() => {
-		AOS.init({ once: true, duration: 250, easing: "linear" });
-	}, 200);
+	AOS.init();
 }
 
 const tabHandler = (tabGroupName, activeClass) => {

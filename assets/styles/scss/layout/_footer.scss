@@ -12,15 +12,23 @@
 		width: 50%;
 		height: calc(478px + 129px);
 
-		@include media("min", "xl") {
+		@media (min-width: 1470px) {
 			width: 500px;
+			display: block !important;
 		}
 	}
 
 	&__content {
 		position: relative;
 		list-style: none;
-		width: 1000px;
+		width: 90%;
+		margin: 0 auto;
+
+		@media (min-width: 1470px) {
+			width: 1000px;
+			margin: 0 0;
+			padding: 0 0;
+		}
 
 		&_menu {
 			width: 100%;
@@ -32,6 +40,10 @@
 
 				@include media("min", "lg") {
 					width: auto;
+				}
+
+				@include media("min", "xl") {
+					width: 100%;
 				}
 			}
 
@@ -63,6 +75,10 @@
 						}
 					}
 
+					address {
+						max-width: 200px;
+					}
+
 					padding-left: 30px;
 					@include media("min", "lg") {
 						&:not(:first-child) {
@@ -77,11 +93,18 @@
 			display: flex;
 
 			&-container {
-				margin-top: 90px;
-
 				@include media("max", "md") {
 					width: 100%;
 					margin-top: 50px;
+				}
+
+				@include media("min", "lg") {
+					margin-top: 90px;
+				}
+
+				@include media("min", "xl") {
+					width: 100%;
+					margin-top: 25px;
 				}
 			}
 
@@ -111,7 +134,7 @@
 			padding-top: 15px;
 		}
 
-		@include media("min", "xl") {
+		@media (min-width: 1470px) {
 			position: absolute;
 			right: 40%;
 			top: 50%;

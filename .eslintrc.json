@@ -9,7 +9,7 @@
 		"SharedArrayBuffer": "readonly"
 	},
 	"rules": {
-		"linebreak-style": "error",
+		"linebreak-style": "off",
 		"semi": "error",
 		"no-await-in-loop": "warn",
 		"no-alert": "error",
