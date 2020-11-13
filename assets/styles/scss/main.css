@@ -437,6 +437,20 @@ ol {
     justify-content: center !important;
   }
 }
+@media (min-width: 992px) {
+  .top-nav > div {
+    position: relative;
+    height: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .top-nav__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .top-nav__working-hours {
   border-radius: 12.5px;
   height: 25px;

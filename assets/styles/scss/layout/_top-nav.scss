@@ -7,6 +7,22 @@
 		}
 	}
 
+	@include media("min", "lg") {
+		& > div {
+			position: relative;
+			height: 80px;
+		}
+	}
+
+	&__logo {
+		@include media("min", "lg") {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
 	&__working-hours {
 		border-radius: 12.5px;
 		height: 25px;
