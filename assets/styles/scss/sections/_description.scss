@@ -1,43 +1,48 @@
 .s-description {
-	background-image: url(../../uploads/images/sections/descriptioons/background-image.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	position: relative;
-	height: 750px;
-
 	&__container {
 		height: 780px;
 		overflow-y: hidden;
 	}
 
-	&__content {
-		max-width: 100%;
-
-		p {
-			font-size: 24px;
-		}
-
-		h3 {
-			font-size: 58px;
-		}
-
-		@include media("min", "lg") {
-			min-width: 600px;
-		}
+	.owl-carousel .owl-stage-outer {
+		overflow: initial;
 	}
 
-	&__image-box {
-		@include media("max", "md") {
-			display: none;
-		}
-	}
+	&__item {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		position: relative;
+		height: 750px;
 
-	&__button-float {
-		position: absolute;
-		left: 50%;
-		top: 100%;
-		transform: translate(-50%, -50%);
+		&_content {
+			max-width: 100%;
+
+			p {
+				font-size: 24px;
+			}
+
+			h3 {
+				font-size: 58px;
+			}
+
+			@include media("min", "lg") {
+				min-width: 600px;
+			}
+		}
+
+		&_image-box {
+			@include media("max", "md") {
+				display: none;
+			}
+		}
+
+		&_button-float {
+			position: absolute;
+			left: 50%;
+			top: 100%;
+			transform: translate(-50%, -50%);
+		}
 	}
 }

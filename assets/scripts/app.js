@@ -25,6 +25,16 @@ function initialize() {
 		dots: true,
 	});
 
+	$(".s-description__items").owlCarousel({
+		items: 1,
+		autoHeight: true,
+		autoplay: true,
+		autoplayHoverPause: true,
+		autoplayTimeout: 5000,
+		loop: true,
+		margin: 0,
+	});
+
 	AOS.init();
 }
 
