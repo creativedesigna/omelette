@@ -1,0 +1,39 @@
+.s-breadcrumb {
+	min-height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	background: linear-gradient(
+			rgba(000, 000, 000, 0.5),
+			rgba(000, 000, 000, 0.5)
+		),
+		url(../../../../uploads/images/product/banner.png);
+	background-position: center;
+	background-repeat: repeat;
+
+	.breadcrumb {
+		margin: 0;
+		background-color: transparent;
+		align-items: center;
+
+		&-item {
+			&:not(:first-child)::before {
+				content: ">";
+				color: #fff;
+			}
+
+			a {
+				text-decoration: none;
+				color: #fff;
+
+				&:hover {
+					color: rgb(214, 214, 214);
+				}
+			}
+		}
+
+		.active {
+			color: #ccc;
+		}
+	}
+}

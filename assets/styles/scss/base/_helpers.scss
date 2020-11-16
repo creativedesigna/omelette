@@ -132,7 +132,7 @@
 	background-color: $danger-1;
 
 	&:focus {
-		box-shadow: 0 0 0 0.2rem rgba(225,83,97,.5);
+		box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 	}
 }
 
@@ -151,9 +151,9 @@
 .bg-warning-gradient {
 	background-image: linear-gradient($warning-1, $warning-2);
 
-        &:focus {
-                box-shadow: 0 0 0 0.2rem rgba(222,170,12,.5);
-        }
+	&:focus {
+		box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
+	}
 }
 
 // cursor
@@ -218,6 +218,14 @@
 .section-title {
 	font-size: 40px;
 	font-weight: bold;
+}
+
+.box-shadow-none {
+	box-shadow: none;
+
+	&:focus {
+		box-shadow: none;
+	}
 }
 
 .overflow-x-hidden {
