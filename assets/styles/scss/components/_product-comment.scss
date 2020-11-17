@@ -1,0 +1,30 @@
+.product-comment {
+	width: 500px;
+	max-width: 100%;
+
+	&__information {
+		h5 {
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1.5;
+			letter-spacing: 0.75px;
+			color: #000000;
+			margin-top: 5px;
+		}
+
+		span {
+			color: #b0b0b0;
+		}
+	}
+
+	&__text {
+		border-radius: 0 30px 30px 30px;
+		padding: 22px 27px 24px;
+		background-color: #eff0f6;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.75;
+		letter-spacing: 0.75px;
+		color: #737373;
+	}
+}

@@ -7,8 +7,8 @@
 		"format": "prettier \"**/*.{js,html,scss}\" --write",
 		"eslint": "eslint \"**/*.{html,js}\"",
 		"eslint:fix": "eslint \"**/*.{html,js}\"",
-		"sass:compile-home": "sass --watch assets/styles/scss/pages/home/home.scss:assets/styles/scss/pages/home/home.css",
-		"sass:compile-product": "sass --watch assets/styles/scss/pages/product/product.scss:assets/styles/scss/pages/product/product.css"
+		"sass:compile-home": "sass --watch assets/styles/scss/home.scss:assets/styles/scss/home.css",
+		"sass:compile-product": "sass --watch assets/styles/scss/product.scss:assets/styles/scss/product.css"
 	},
 	"repository": {
 		"type": "git",

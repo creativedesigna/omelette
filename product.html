@@ -12,13 +12,14 @@
 			type="image/gif"
 			sizes="16x16"
 		/> -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		/>
 		<link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/styles/owl.carousel.min.css" />
 		<!-- <link rel="stylesheet" href="assets/styles/aos.css" /> -->
-		<link
-			rel="stylesheet"
-			href="assets/styles/scss/pages/product/product.css"
-		/>
+		<link rel="stylesheet" href="assets/styles/scss/product.css" />
 	</head>
 	<body>
 		<!-- start line top nav: styles in layout/top-nav -->
@@ -160,7 +161,7 @@
 							data-toggle="tooltip"
 							title="Profile"
 						>
-							<span data-icon="profile"></span>
+							<i class="far fa-user"></i>
 						</a>
 
 						<!-- bag -->
@@ -170,8 +171,8 @@
 							data-toggle="tooltip"
 							title="Bag"
 						>
-							<span data-icon="bag"></span
-						></a>
+							<i class="fas fa-shopping-bag"></i>
+						</a>
 
 						<!-- change language -->
 						<a
@@ -224,11 +225,15 @@
 					<div>
 						<!-- start star product -->
 						<div>
-							<span data-icon="star"></span>
-							<span data-icon="star"></span>
-							<span data-icon="star"></span>
-							<span data-icon="star"></span>
-							<span data-icon="star" data-fill="#c9c9c9"></span>
+							<i class="fas fa-star text-warning"></i>
+
+							<i class="fas fa-star text-warning"></i>
+
+							<i class="fas fa-star text-warning"></i>
+
+							<i class="fas fa-star text-warning"></i>
+
+							<i class="fas fa-star text-secondary-10"></i>
 						</div>
 						<!-- end star product -->
 
@@ -302,7 +307,32 @@
 						<li class="d-flex">
 							<span>Share: </span>
 
-							<div class="d-flex"></div>
+							<div class="d-flex">
+								<a
+									href="#"
+									class="ml-2"
+									data-toggle="tooltip"
+									title="Facebook"
+								>
+									<i class="fab fa-facebook-f text-black"></i
+								></a>
+
+								<a
+									href="#"
+									class="ml-2"
+									data-toggle="tooltip"
+									title="Twitter"
+									><i class="fab fa-twitter text-black"></i
+								></a>
+
+								<a
+									href="#"
+									class="ml-2"
+									data-toggle="tooltip"
+									title="Email"
+									><i class="far fa-envelope text-black"></i
+								></a>
+							</div>
 						</li>
 					</ul>
 					<!-- end fourth line -->
@@ -310,10 +340,693 @@
 				<!-- end line details product -->
 			</section>
 			<!-- end line section header product -->
+
+			<!-- start container(description and review) tab: styles in sections/s-tabs-product -->
+			<div class="s-product-tabs">
+				<!-- start btn tabs -->
+				<div
+					class="s-product-tabs__btn-tabs-group flex-wrap d-flex justify-content-center align-items-center"
+				>
+					<button
+						class="btn box-shadow-none"
+						data-tab-name="product-description"
+						data-tab-group-name="s-tabs-product"
+						data-tab-active="true"
+					>
+						Description
+					</button>
+
+					<button
+						class="btn box-shadow-none"
+						data-tab-name="product-reviews"
+						data-tab-group-name="s-tabs-product"
+					>
+						Reviews
+					</button>
+				</div>
+				<!-- end btn tabs -->
+
+				<!-- start line section description -->
+				<section
+					data-tab-group-name-item="s-tabs-product"
+					class="s-product-description"
+				>
+					<p>
+						In a casserole dish, 2 eggs, potatoes, bacon, ham,
+						sausage, with hollandaise sauce and gratinated
+						mozzarella cheese, served with fresh fruits, toast and
+						potatoes / In a casserole, 2 eggs, potatoes, bacon, ham,
+						sausage,
+						<br /><br />
+						with hollandaise sauce and grated mozzarella cheese,
+						served with fresh fruit, toast and potatoes homozzarella
+						cheese, served with fresh fruit, toast and potatoes
+					</p>
+
+					<div class="s-product-description__list">
+						<span class="text-black">Ingredients: </span>
+						<span class="text-secondary-2 ml-1"
+							>egg, potatoes, bacon, ham, sausage</span
+						>
+
+						<ul class="d-flex mt-1">
+							<li>
+								<span class="text-black">Calories: </span
+								><span class="text-secondary-2 ml-1">250</span>
+							</li>
+							<li class="ml-3">
+								<span class="text-black">Fat: </span
+								><span class="text-secondary-2 ml-1">4</span>
+							</li>
+							<li class="ml-3">
+								<span class="text-black">Protein: </span
+								><span class="text-secondary-2 ml-1">10</span>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- end line section description -->
+
+				<!-- start line section review -->
+				<section
+					data-tab-group-name-item="s-tabs-product"
+					class="s-product-reviews"
+				>
+					<div class="row w-100">
+						<!-- start line comments container -->
+						<div class="col-lg-6">
+							<!-- start line comment -->
+							<div class="d-flex">
+								<div class="product-comment">
+									<!-- start line comment information -->
+									<div
+										class="d-flex align-items-center product-comment__information"
+									>
+										<img
+											src="assets/uploads/images/sections/comments/avatar.png"
+											alt="avatar"
+											width="48"
+											height="48"
+											draggable="false"
+										/>
+
+										<div
+											class="d-flex align-items-center ml-2 w-100"
+										>
+											<div class="w-100">
+												<div
+													class="d-flex align-items-center flex-wrap justify-content-between"
+												>
+													<div>
+														<i
+															class="fas fa-star text-warning ml-1"
+														></i>
+														<i
+															class="fas fa-star text-warning"
+														></i>
+														<i
+															class="fas fa-star text-warning"
+														></i>
+														<i
+															class="fas fa-star text-warning"
+														></i>
+														<i
+															class="fas fa-star text-secondary-10"
+														></i>
+													</div>
+
+													<span class="pl-1">
+														<i
+															class="far fa-clock"
+														></i>
+
+														Novamber 13, 2020
+													</span>
+												</div>
+
+												<h5>Amir Hemmati</h5>
+											</div>
+										</div>
+									</div>
+									<!-- end line comment information -->
+
+									<!-- start line comment text -->
+									<p class="product-comment__text">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Dignissim integer
+										blandit eget nec urna felis. Mauris
+										suscipit tempus sed tortor.
+									</p>
+									<!-- end line comment text -->
+								</div>
+							</div>
+							<!-- start line comment -->
+
+							<!-- start answer from admin -->
+							<div class="d-flex ml-4 pl-4 mt-2">
+								<div class="product-comment">
+									<!-- start line comment information -->
+									<div
+										class="d-flex align-items-center product-comment__information"
+									>
+										<img
+											src="assets/uploads/images/sections/comments/avatar.png"
+											alt="avatar"
+											width="48"
+											height="48"
+											draggable="false"
+										/>
+
+										<div
+											class="d-flex align-items-center ml-2 w-100"
+										>
+											<div class="w-100">
+												<div
+													class="d-flex align-items-center flex-wrap justify-content-between"
+												>
+													<div>
+														<i
+															class="fas fa-star text-warning ml-1"
+														></i>
+														<i
+															class="fas fa-star text-warning"
+														></i>
+														<i
+															class="fas fa-star text-warning"
+														></i>
+														<i
+															class="fas fa-star text-warning"
+														></i>
+														<i
+															class="fas fa-star text-secondary-10"
+														></i>
+													</div>
+
+													<span class="pl-1">
+														<i
+															class="far fa-clock"
+														></i>
+
+														Novamber 13, 2020
+													</span>
+												</div>
+
+												<h5>Admin Only</h5>
+											</div>
+										</div>
+									</div>
+									<!-- end line comment information -->
+
+									<!-- start line comment text -->
+									<p class="product-comment__text">
+										this message send with admin !!!
+										<br />
+										<br />
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Dignissim integer
+										blandit eget nec urna felis. Mauris
+										suscipit tempus sed tortor.
+									</p>
+									<!-- end line comment text -->
+								</div>
+							</div>
+							<!-- end line answer from admin -->
+
+							<div class="d-flex mt-4">
+								<div class="product-comment">
+									<!-- start line comment information -->
+									<div
+										class="d-flex align-items-center product-comment__information"
+									>
+										<img
+											src="assets/uploads/images/sections/comments/avatar.png"
+											alt="avatar"
+											width="48"
+											height="48"
+											draggable="false"
+										/>
+
+										<div
+											class="d-flex align-items-center ml-2 w-100"
+										>
+											<div class="w-100">
+												<div
+													class="d-flex align-items-center flex-wrap justify-content-between"
+												>
+													<div>
+														<i
+															class="fas fa-star text-warning ml-1"
+														></i>
+														<i
+															class="fas fa-star text-warning"
+														></i>
+														<i
+															class="fas fa-star text-warning"
+														></i>
+														<i
+															class="fas fa-star text-warning"
+														></i>
+														<i
+															class="fas fa-star text-secondary-10"
+														></i>
+													</div>
+
+													<span class="pl-1">
+														<i
+															class="far fa-clock"
+														></i>
+
+														Novamber 13, 2020
+													</span>
+												</div>
+
+												<h5>Amir Hemmati</h5>
+											</div>
+										</div>
+									</div>
+									<!-- end line comment information -->
+
+									<!-- start line comment text -->
+									<p class="product-comment__text">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Dignissim integer
+										blandit eget nec urna felis. Mauris
+										suscipit tempus sed tortor.
+									</p>
+									<!-- end line comment text -->
+								</div>
+							</div>
+						</div>
+						<!-- end line comments container -->
+
+						<!-- start line form add comment -->
+						<form
+							class="col-lg-6 s-product-reviews__form"
+							id="comment-form"
+						>
+							<!-- start rat group -->
+							<div class="form-group">
+								<label data-require="true">Your Rating </label>
+
+								<input
+									type="hidden"
+									name="rating-count"
+									id="rating-count"
+									value="5"
+								/>
+								<div
+									class="mt-1 cursor-default"
+									id="comment-rat-container"
+								>
+									<i
+										class="fas fa-star cursor-pointer text-warning fs-20"
+									></i>
+									<i
+										class="fas fa-star cursor-pointer text-warning fs-20"
+									></i>
+									<i
+										class="fas fa-star cursor-pointer text-warning fs-20"
+									></i>
+									<i
+										class="fas fa-star cursor-pointer text-warning fs-20"
+									></i>
+									<i
+										class="fas fa-star cursor-pointer text-warning fs-20"
+									></i>
+								</div>
+							</div>
+							<!-- end rat group -->
+
+							<div class="row mt-4 pt-3">
+								<!-- start line name group -->
+								<div class="col-lg-6 form-group">
+									<label data-require="true"
+										>Your Name
+									</label>
+
+									<input
+										type="text"
+										name="name"
+										placeholder="Name"
+										class="form-control"
+									/>
+								</div>
+								<!-- end line name group -->
+
+								<!-- start line email group -->
+								<div class="col-lg-6 form-group">
+									<label data-require="true"
+										>Your Email
+									</label>
+
+									<input
+										type="email"
+										name="email"
+										placeholder="Email"
+										class="form-control"
+									/>
+								</div>
+								<!-- end line email group -->
+							</div>
+
+							<!-- start line review group message -->
+							<div class="form-group mt-2">
+								<label data-require="true">Your Review </label>
+
+								<textarea
+									name="reviews-message"
+									class="form-control"
+									placeholder="Message"
+									rows="12"
+								></textarea>
+							</div>
+							<!-- end line review group message -->
+
+							<button
+								type="submit"
+								class="btn btn-danger bg-danger-1 mt-4"
+							>
+								Submit
+							</button>
+						</form>
+						<!-- end line form add comment -->
+					</div>
+				</section>
+				<!-- end line section review -->
+			</div>
+			<!-- end container(description and review) tab -->
+
+			<!-- start line related foods -->
+			<section class="s-related-foods">
+				<div class="row">
+					<!-- start first one product -->
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="card product-card"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
+							<!-- <a href="#" class="text-decoration-none"> -->
+							<div class="card-body">
+								<!-- start image box in card -->
+								<div class="product-card__image-box">
+									<img
+										src="assets/uploads/images/sections/popular-products/1.png"
+										alt="1"
+										width="232"
+										height="245"
+										draggable="false"
+									/>
+								</div>
+								<!-- end image box in card -->
+
+								<!-- start star box in card -->
+								<div
+									class="d-flex justify-content-between align-items-center mt-3"
+								>
+									<div class="d-flex align-items-center">
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i
+											class="fas fa-star text-secondary-10"
+										></i>
+									</div>
+
+									<span
+										class="text-secondary-4 font-weight-bold fs-16"
+									>
+										265 Cal
+									</span>
+								</div>
+								<!-- end star box in card -->
+
+								<h5 class="fs-18 font-weight-bold text-black">
+									Card Title
+								</h5>
+
+								<p>
+									Card description. Lorem ipsum dolor sit
+									amet, consectetur elit adipiscing, sed do
+									eiusm tem dolor sit amet, consectetur.
+								</p>
+
+								<div
+									class="d-flex justify-content-between align-items-center product-card__footer"
+								>
+									<div>
+										<del>$35.90</del>
+										<span class="ml-1">$23.90</span>
+									</div>
+
+									<a
+										href="product.html"
+										class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+										>order</a
+									>
+								</div>
+							</div>
+							<!-- </a> -->
+						</div>
+					</div>
+					<!-- end first one product -->
+
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="card product-card"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
+							<!-- <a href="#" class="text-decoration-none"> -->
+							<div class="card-body">
+								<!-- start image box in card -->
+								<div class="product-card__image-box">
+									<img
+										src="assets/uploads/images/sections/popular-products/1.png"
+										alt="1"
+										width="232"
+										height="245"
+										draggable="false"
+									/>
+								</div>
+								<!-- end image box in card -->
+
+								<!-- start star box in card -->
+								<div
+									class="d-flex justify-content-between align-items-center mt-3"
+								>
+									<div class="d-flex align-items-center">
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i
+											class="fas fa-star text-secondary-10"
+										></i>
+									</div>
+
+									<span
+										class="text-secondary-4 font-weight-bold fs-16"
+									>
+										265 Cal
+									</span>
+								</div>
+								<!-- end star box in card -->
+
+								<h5 class="fs-18 font-weight-bold text-black">
+									Card Title
+								</h5>
+
+								<p>
+									Card description. Lorem ipsum dolor sit
+									amet, consectetur elit adipiscing, sed do
+									eiusm tem dolor sit amet, consectetur.
+								</p>
+
+								<div
+									class="d-flex justify-content-between align-items-center product-card__footer"
+								>
+									<div>
+										<del>$35.90</del>
+										<span class="ml-1">$23.90</span>
+									</div>
+
+									<a
+										href="product.html"
+										class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+										>order</a
+									>
+								</div>
+							</div>
+							<!-- </a> -->
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="card product-card"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
+							<!-- <a href="#" class="text-decoration-none"> -->
+							<div class="card-body">
+								<!-- start image box in card -->
+								<div class="product-card__image-box">
+									<img
+										src="assets/uploads/images/sections/popular-products/1.png"
+										alt="1"
+										width="232"
+										height="245"
+										draggable="false"
+									/>
+								</div>
+								<!-- end image box in card -->
+
+								<!-- start star box in card -->
+								<div
+									class="d-flex justify-content-between align-items-center mt-3"
+								>
+									<div class="d-flex align-items-center">
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i
+											class="fas fa-star text-secondary-10"
+										></i>
+									</div>
+
+									<span
+										class="text-secondary-4 font-weight-bold fs-16"
+									>
+										265 Cal
+									</span>
+								</div>
+								<!-- end star box in card -->
+
+								<h5 class="fs-18 font-weight-bold text-black">
+									Card Title
+								</h5>
+
+								<p>
+									Card description. Lorem ipsum dolor sit
+									amet, consectetur elit adipiscing, sed do
+									eiusm tem dolor sit amet, consectetur.
+								</p>
+
+								<div
+									class="d-flex justify-content-between align-items-center product-card__footer"
+								>
+									<div>
+										<del>$35.90</del>
+										<span class="ml-1">$23.90</span>
+									</div>
+
+									<a
+										href="product.html"
+										class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+										>order</a
+									>
+								</div>
+							</div>
+							<!-- </a> -->
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
+						<div
+							class="card product-card"
+							data-aos="fade-up"
+							data-aos-anchor-placement="center-bottom"
+						>
+							<!-- <a href="#" class="text-decoration-none"> -->
+							<div class="card-body">
+								<!-- start image box in card -->
+								<div class="product-card__image-box">
+									<img
+										src="assets/uploads/images/sections/popular-products/1.png"
+										alt="1"
+										width="232"
+										height="245"
+										draggable="false"
+									/>
+								</div>
+								<!-- end image box in card -->
+
+								<!-- start star box in card -->
+								<div
+									class="d-flex justify-content-between align-items-center mt-3"
+								>
+									<div class="d-flex align-items-center">
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i class="fas fa-star text-warning"></i>
+
+										<i
+											class="fas fa-star text-secondary-10"
+										></i>
+									</div>
+
+									<span
+										class="text-secondary-4 font-weight-bold fs-16"
+									>
+										265 Cal
+									</span>
+								</div>
+								<!-- end star box in card -->
+
+								<h5 class="fs-18 font-weight-bold text-black">
+									Card Title
+								</h5>
+
+								<p>
+									Card description. Lorem ipsum dolor sit
+									amet, consectetur elit adipiscing, sed do
+									eiusm tem dolor sit amet, consectetur.
+								</p>
+
+								<div
+									class="d-flex justify-content-between align-items-center product-card__footer"
+								>
+									<div>
+										<del>$35.90</del>
+										<span class="ml-1">$23.90</span>
+									</div>
+
+									<a
+										href="product.html"
+										class="btn bg-warning-gradient rounded-high text-white font-weight-bold border-0 px-4 py-2"
+										>order</a
+									>
+								</div>
+							</div>
+							<!-- </a> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end line related foods -->
 		</main>
 		<!-- end line main tag -->
 
-		<!-- start line footer -->
+		<!-- start line footer: styles in layout/footer -->
 		<div class="position-relative bg-dark-5">
 			<footer class="footer bg-dark-5 d-flex justify-content-between">
 				<img
@@ -432,33 +1145,26 @@
 								class="d-flex flex-column align-items-center justify-content-center footer__content_social-container"
 							>
 								<div class="footer__content_social">
-									<a href="#">
-										<span
-											data-icon="facebook"
-											data-width="45"
-											data-height="45"
-											data-fill="white"
-											class="footer__content_social-icon"
-										></span>
+									<a
+										href="#"
+										class="footer__content_social-icon"
+									>
+										<i class="fab fa-facebook-f"></i>
 									</a>
 
-									<a href="#">
-										<span
-											data-icon="twitter"
-											data-width="45"
-											data-height="45"
-											data-fill="white"
-											class="footer__content_social-icon"
-										></span>
+									<a
+										href="#"
+										class="footer__content_social-icon"
+									>
+										<i class="fab fa-twitter"></i>
 									</a>
 
-									<a href="#"
-										><span
-											data-icon="instagram"
-											data-fill="white"
-											class="footer__content_social-icon"
-										></span
-									></a>
+									<a
+										href="#"
+										class="footer__content_social-icon"
+									>
+										<i class="fab fa-instagram"></i>
+									</a>
 								</div>
 
 								<p
@@ -481,8 +1187,8 @@
 		<script src="assets/scripts/bootstrap.min.js"></script>
 		<script src="assets/scripts/owl.carousel.min.js"></script>
 		<!-- <script src="assets/scripts/aos.js"></script> -->
-		<script src="assets/scripts/icons.js"></script>
-		<script src="assets/scripts/tab.js"></script>
+		<script src="assets/scripts/Utility.js"></script>
+		<script src="assets/scripts/pages/product.js"></script>
 		<script src="assets/scripts/app.js"></script>
 	</body>
 </html>
