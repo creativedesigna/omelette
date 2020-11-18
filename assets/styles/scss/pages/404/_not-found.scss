@@ -1,0 +1,93 @@
+.s-not-found {
+	padding: 50px 0 100px 0;
+	width: 700px;
+	max-width: 90%;
+	margin: 0 auto;
+
+	&__404 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width: 300px) {
+			display: none !important;
+		}
+
+		@include media("max", "sm") {
+			margin-top: 20px;
+			margin-bottom: 80px;
+		}
+
+		img {
+			animation-name: aPizza;
+			animation-duration: 7s;
+			animation-iteration-count: infinite;
+			animation-delay: 0.5s;
+			transform: rotate(0);
+
+			@keyframes aPizza {
+				from {
+					transform: rotate(0);
+				}
+
+				to {
+					transform: rotate(360deg);
+				}
+			}
+
+			@include media("max", "sm") {
+				display: none;
+			}
+		}
+
+		span {
+			font-size: 288px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 0.21;
+			letter-spacing: 0.1px;
+			text-align: left;
+			color: #000000;
+
+			@include media("max", "sm") {
+				font-size: 120px;
+			}
+
+			&:first-child {
+				padding-right: 20px;
+			}
+
+			&:nth-child(3) {
+				@include media("min", "md") {
+					display: none;
+				}
+			}
+
+			&:last-child {
+				margin-left: 5px;
+			}
+		}
+	}
+
+	h2 {
+		margin-top: 25px;
+		font-size: 48px;
+		font-weight: bold;
+		line-height: 1.27;
+		letter-spacing: 0.1px;
+		text-align: center;
+		color: #000000;
+	}
+
+	a {
+		padding: 16px 40px;
+		border-radius: 30px;
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 1.5;
+		letter-spacing: 0.1px;
+		color: #ffffff;
+		margin-top: 50px;
+	}
+}
