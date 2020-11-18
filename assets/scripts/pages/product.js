@@ -25,4 +25,6 @@ function initialize() {
 	// 	loop: true,
 	// 	margin: 0,
 	// });
+
+	AOS.init();
 }

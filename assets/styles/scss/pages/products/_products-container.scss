@@ -1,0 +1,228 @@
+.products-container {
+	width: 1440px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 50px 24px;
+
+	&__filter {
+		& > form {
+			@include media("min", "lg") {
+				position: sticky;
+				top: 25px;
+				left: 0;
+				width: 100%;
+				height: 90vh;
+				overflow: auto;
+				padding-right: 5px;
+			}
+
+			& > .card {
+				border-radius: 5px;
+
+				.card__header {
+					h4 {
+						font-size: 18px;
+						font-weight: bold;
+						line-height: 1.5;
+						letter-spacing: 0.1px;
+						color: #252b42;
+						margin-bottom: 0;
+					}
+				}
+
+				.card__body {
+					margin-top: 10px;
+				}
+
+				#filter-menu {
+					margin-top: 15px;
+
+					& > li {
+						margin: 20px;
+
+						i {
+							width: 28px;
+							height: 28px;
+							cursor: pointer;
+							border-radius: 50%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							background-color: #f1f1f1;
+							color: #bdbdbd;
+						}
+
+						h4 {
+							font-size: 16px;
+							font-weight: bold;
+							line-height: 1.5;
+							letter-spacing: 0.1px;
+							color: #252b42;
+							margin-bottom: 0;
+						}
+
+						ul {
+							margin-top: 10px;
+							padding-left: 10px;
+							display: none;
+
+							li {
+								margin-top: 4px;
+								font-size: 14px;
+								font-weight: 600;
+								font-stretch: normal;
+								font-style: normal;
+								line-height: 1.71;
+								letter-spacing: 0.2px;
+								text-align: left;
+								color: #737373;
+							}
+						}
+					}
+
+					.active {
+						i {
+							color: white;
+							background-color: $danger-1;
+						}
+
+						margin-bottom: 16px;
+
+						// #ul_filter_menu
+						// &:not(:last-child) {
+						// 	border-bottom: 1px solid #e4e4e4;
+						// 	padding-bottom: 16px;
+						// }
+					}
+				}
+
+				&:not(:first-child) {
+					margin-top: 30px;
+				}
+			}
+
+			input {
+				padding-left: 13px !important;
+				padding-top: 13px !important;
+				padding-bottom: 13px !important;
+				height: auto;
+				border-radius: 7px;
+				// box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+				border: solid 1px #dcdcdc;
+				background-color: #ffffff;
+			}
+
+			button {
+				margin-top: 30px;
+				padding: 10px 25px;
+				width: 100%;
+				background-color: #fff;
+				font-size: 20px;
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+				&:hover {
+					background-color: rgb(247, 247, 247);
+				}
+
+				&:active,
+				&:focus {
+					background-color: rgb(238, 237, 237) !important;
+				}
+			}
+		}
+	}
+
+	&__products {
+		@include media("max", "md") {
+			padding-top: 35px;
+			margin-top: 35px;
+			border-top: 1px solid $secondary-1;
+		}
+
+		&_grid {
+			@include media("max", "md") {
+				margin: 0 !important;
+			}
+
+			& > div {
+				margin-top: 20px;
+
+				@include media("max", "md") {
+					&:nth-child(odd) {
+						padding-left: 0;
+					}
+
+					&:nth-child(even) {
+						padding-right: 0;
+					}
+
+					& > .card {
+						width: 100%;
+					}
+				}
+
+				@include media("max", "sm") {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+		}
+
+		&_pagination {
+			position: relative;
+			bottom: 20px;
+
+			ul {
+				flex-wrap: wrap;
+
+				li {
+					margin-top: 45px;
+					justify-content: center;
+
+					&:not(:first-child) {
+						margin-left: 20px;
+					}
+
+					a {
+						min-width: 69px;
+						height: 68px;
+						padding: 16px 29px;
+						border-radius: 30px;
+						border: solid 1px #e5e5e5;
+						// background-color: #ffc961;
+						font-size: 20px;
+						font-weight: bold;
+						font-stretch: normal;
+						font-style: normal;
+						line-height: 1.5;
+						letter-spacing: 0.1px;
+						text-align: left;
+						color: #252b42;
+						transition: 0.3s;
+						text-decoration: none;
+
+						&:hover {
+							background-color: rgb(241, 241, 241);
+						}
+					}
+
+					.active {
+						background-color: #ffc961;
+						&:hover {
+							background-color: #ffc961;
+						}
+					}
+
+					.disabled {
+						opacity: 0.7;
+						cursor: default;
+
+						&:hover {
+							background-color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}

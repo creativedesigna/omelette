@@ -18,7 +18,7 @@
 		/>
 		<link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/styles/owl.carousel.min.css" />
-		<!-- <link rel="stylesheet" href="assets/styles/aos.css" /> -->
+		<link rel="stylesheet" href="assets/styles/aos.css" />
 		<link rel="stylesheet" href="assets/styles/scss/product.css" />
 	</head>
 	<body>
@@ -207,7 +207,7 @@
 			<section class="s-header-product row align-items-stretch">
 				<!-- start line image box product -->
 				<div class="col-lg-6 s-header-product__image-box">
-					<div>
+					<div data-aos="flip-down">
 						<img
 							src="assets/uploads/images/product/product-image.png"
 							alt="product-image"
@@ -412,7 +412,7 @@
 					data-tab-group-name-item="s-tabs-product"
 					class="s-product-reviews"
 				>
-					<div class="row w-100">
+					<div class="row d-sm-block d-lg-flex w-100 mb-sm-4">
 						<!-- start line comments container -->
 						<div class="col-lg-6">
 							<!-- start line comment -->
@@ -487,7 +487,7 @@
 								<div class="product-comment">
 									<!-- start line comment information -->
 									<div
-										class="d-flex align-items-center product-comment__information"
+										class="d-flex align-items-center product-comment__information mb-2"
 									>
 										<img
 											src="assets/uploads/images/sections/comments/avatar.png"
@@ -504,23 +504,7 @@
 												<div
 													class="d-flex align-items-center flex-wrap justify-content-between"
 												>
-													<div>
-														<i
-															class="fas fa-star text-warning ml-1"
-														></i>
-														<i
-															class="fas fa-star text-warning"
-														></i>
-														<i
-															class="fas fa-star text-warning"
-														></i>
-														<i
-															class="fas fa-star text-warning"
-														></i>
-														<i
-															class="fas fa-star text-secondary-10"
-														></i>
-													</div>
+													<h5>Admin Only</h5>
 
 													<span class="pl-1">
 														<i
@@ -530,8 +514,6 @@
 														Novamber 13, 2020
 													</span>
 												</div>
-
-												<h5>Admin Only</h5>
 											</div>
 										</div>
 									</div>
@@ -620,95 +602,101 @@
 						<!-- end line comments container -->
 
 						<!-- start line form add comment -->
-						<form
-							class="col-lg-6 s-product-reviews__form"
-							id="comment-form"
-						>
-							<!-- start rat group -->
-							<div class="form-group">
-								<label data-require="true">Your Rating </label>
-
-								<input
-									type="hidden"
-									name="rating-count"
-									id="rating-count"
-									value="5"
-								/>
-								<div
-									class="mt-1 cursor-default"
-									id="comment-rat-container"
-								>
-									<i
-										class="fas fa-star cursor-pointer text-warning fs-20"
-									></i>
-									<i
-										class="fas fa-star cursor-pointer text-warning fs-20"
-									></i>
-									<i
-										class="fas fa-star cursor-pointer text-warning fs-20"
-									></i>
-									<i
-										class="fas fa-star cursor-pointer text-warning fs-20"
-									></i>
-									<i
-										class="fas fa-star cursor-pointer text-warning fs-20"
-									></i>
-								</div>
-							</div>
-							<!-- end rat group -->
-
-							<div class="row mt-4 pt-3">
-								<!-- start line name group -->
-								<div class="col-lg-6 form-group">
-									<label data-require="true"
-										>Your Name
-									</label>
-
-									<input
-										type="text"
-										name="name"
-										placeholder="Name"
-										class="form-control"
-									/>
-								</div>
-								<!-- end line name group -->
-
-								<!-- start line email group -->
-								<div class="col-lg-6 form-group">
-									<label data-require="true"
-										>Your Email
-									</label>
-
-									<input
-										type="email"
-										name="email"
-										placeholder="Email"
-										class="form-control"
-									/>
-								</div>
-								<!-- end line email group -->
-							</div>
-
-							<!-- start line review group message -->
-							<div class="form-group mt-2">
-								<label data-require="true">Your Review </label>
-
-								<textarea
-									name="reviews-message"
-									class="form-control"
-									placeholder="Message"
-									rows="12"
-								></textarea>
-							</div>
-							<!-- end line review group message -->
-
-							<button
-								type="submit"
-								class="btn btn-danger bg-danger-1 mt-4"
+						<div class="col-lg-6 mt-lg-0">
+							<form
+								class="s-product-reviews__form mt-sm-4"
+								id="comment-form"
 							>
-								Submit
-							</button>
-						</form>
+								<!-- start rat group -->
+								<div class="form-group">
+									<label data-require="true"
+										>Your Rating
+									</label>
+
+									<input
+										type="hidden"
+										name="rating-count"
+										id="rating-count"
+										value="5"
+									/>
+									<div
+										class="mt-1 cursor-default"
+										id="comment-rat-container"
+									>
+										<i
+											class="fas fa-star cursor-pointer text-warning fs-20"
+										></i>
+										<i
+											class="fas fa-star cursor-pointer text-warning fs-20"
+										></i>
+										<i
+											class="fas fa-star cursor-pointer text-warning fs-20"
+										></i>
+										<i
+											class="fas fa-star cursor-pointer text-warning fs-20"
+										></i>
+										<i
+											class="fas fa-star cursor-pointer text-warning fs-20"
+										></i>
+									</div>
+								</div>
+								<!-- end rat group -->
+
+								<div class="row mt-4 pt-3">
+									<!-- start line name group -->
+									<div class="col-lg-6 form-group">
+										<label data-require="true"
+											>Your Name
+										</label>
+
+										<input
+											type="text"
+											name="name"
+											placeholder="Name"
+											class="form-control"
+										/>
+									</div>
+									<!-- end line name group -->
+
+									<!-- start line email group -->
+									<div class="col-lg-6 form-group">
+										<label data-require="true"
+											>Your Email
+										</label>
+
+										<input
+											type="email"
+											name="email"
+											placeholder="Email"
+											class="form-control"
+										/>
+									</div>
+									<!-- end line email group -->
+								</div>
+
+								<!-- start line review group message -->
+								<div class="form-group mt-2">
+									<label data-require="true"
+										>Your Review
+									</label>
+
+									<textarea
+										name="reviews-message"
+										class="form-control"
+										placeholder="Message"
+										rows="12"
+									></textarea>
+								</div>
+								<!-- end line review group message -->
+
+								<button
+									type="submit"
+									class="btn btn-danger bg-danger-1 mt-4"
+								>
+									Submit
+								</button>
+							</form>
+						</div>
 						<!-- end line form add comment -->
 					</div>
 				</section>
@@ -718,6 +706,8 @@
 
 			<!-- start line related foods -->
 			<section class="s-related-foods">
+				<h2>Related Foods</h2>
+
 				<div class="row">
 					<!-- start first one product -->
 					<div class="col-xl-3 col-lg-4 col-md-6 col-sm mb-4">
@@ -1186,7 +1176,7 @@
 		<script src="assets/scripts/popper.min.js"></script>
 		<script src="assets/scripts/bootstrap.min.js"></script>
 		<script src="assets/scripts/owl.carousel.min.js"></script>
-		<!-- <script src="assets/scripts/aos.js"></script> -->
+		<script src="assets/scripts/aos.js"></script>
 		<script src="assets/scripts/Utility.js"></script>
 		<script src="assets/scripts/pages/product.js"></script>
 		<script src="assets/scripts/app.js"></script>

@@ -246,3 +246,11 @@
 .overflow-x-hidden {
 	overflow-x: hidden;
 }
+
+.input-search-icon {
+	padding-right: calc(1.5em + 0.75rem);
+	background-image: url(../../uploads/images/bi_search.svg);
+	background-repeat: no-repeat;
+	background-position: right calc(0.375em + 0.1875rem) center;
+	background-size: 25px 25px;
+}

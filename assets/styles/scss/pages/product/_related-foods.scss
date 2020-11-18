@@ -1,6 +1,24 @@
 .s-related-foods {
-	padding: 50px 0 150px 0;
+	padding: 50px 0 15px 0;
 	width: 1440px;
-	max-width: 90%;
+	max-width: 95%;
 	margin: 0 auto;
+	overflow: hidden;
+
+	@media (min-width: 1470px) {
+		padding-bottom: 100px;
+	}
+
+	h2 {
+		opacity: 0.8;
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 0.9;
+		letter-spacing: 0.1px;
+		text-align: left;
+		color: #000000;
+		margin-bottom: 50px;
+		margin-top: 10px;
+		text-align: center;
+	}
 }
