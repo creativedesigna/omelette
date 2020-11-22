@@ -10,9 +10,8 @@
 @import "./layout/header", "./layout/footer", "./layout/top-nav";
 
 // 5. Components
-@import "./components/product-comment", "./components/product-card";
+@import "./components/comment-custom-form";
 
 // 8. Sections
-@import "./pages/product/breadcrumb", "./pages/product/header-product",
-	"./pages/product/s-tabs-product", "./pages/product/related-foods",
-	"./components/comment-custom-form";
+@import "./pages/contact/breadcrumb", "./pages/contact/contacts",
+	"./pages/contact/location";

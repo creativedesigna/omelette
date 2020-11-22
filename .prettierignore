@@ -4,11 +4,11 @@
 /assets/scripts/popper.min.js
 /assets/scripts/owl.carousel.min.js
 /assets/scripts/aos.js
+/assets/scripts/lightgallery.min.js
+/assets/scripts/lg-video.min.js
 
 # css
-/assets/styles/bootstrap.min.css
-/assets/styles/owl.carousel.min.css
-/assets/styles/aos.css
+/assets/styles/**/*.css
 
 /node_modules
 

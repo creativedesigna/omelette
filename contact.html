@@ -19,8 +19,7 @@
 		<link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/styles/owl.carousel.min.css" />
 		<link rel="stylesheet" href="assets/styles/aos.css" />
-		<link rel="stylesheet" href="assets/styles/lightgallery.min.css" />
-		<link rel="stylesheet" href="assets/styles/scss/gallery.css" />
+		<link rel="stylesheet" href="assets/styles/scss/contact.css" />
 	</head>
 	<body>
 		<!-- start line top nav: styles in layout/top-nav -->
@@ -207,18 +206,136 @@
 			</section>
 			<!-- end line section breadcrumb -->
 
-			<div id="map" data-lat="-25.344" data-lng="131.036"></div>
+			<!-- start line section contacts -->
+			<section class="contacts">
+				<h2>Call us or visit place</h2>
 
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+				<div class="row">
+					<div class="col-lg-7">
+						<ul class="row contacts__list">
+							<li
+								class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-center pl-0"
+							>
+								<i class="fas fa-map-marker-alt"></i>
+
+								<h4>Address</h4>
+
+								<p>
+									126 boul. Jacques-Bizard (3,413.92 mi)
+									Montreal, QC, Canada H9c2t9
+								</p>
+							</li>
+
+							<li
+								class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-center"
+							>
+								<i class="fas fa-phone-alt"></i>
+
+								<h4>Phone Number</h4>
+
+								<a href="tel:+15146753654">514-675-3654</a>
+							</li>
+
+							<li
+								class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-center"
+							>
+								<i class="fas fa-clock"></i>
+
+								<h4>Our Business Hours</h4>
+
+								<p>6:00 AM - 2:00 PM</p>
+							</li>
+
+							<li
+								class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-center"
+							>
+								<i class="fas fa-map-marker-alt"></i>
+
+								<h4>Email Address</h4>
+
+								<a href="mail://creativedesigna@gmail.com"
+									>creativedesigna@gmail.com</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-5 contacts__image d-sm-none d-lg-block">
+						<img
+							src="assets/uploads/images/contact/burger.png"
+							alt="image"
+							width="472"
+							height="472"
+							draggable="false"
+						/>
+					</div>
+				</div>
+			</section>
+			<!-- end line section contacts -->
+
+			<!-- start line location -->
+			<section class="location">
+				<div class="row">
+					<div class="col-lg-7">
+						<div
+							id="map"
+							data-lat="-25.344"
+							data-lng="131.036"
+						></div>
+					</div>
+
+					<div class="col-lg-5">
+						<form class="location__form mt-sm-4" id="comment-form">
+							<!-- start line name group -->
+							<div class="form-group">
+								<label data-require="true">Your Name </label>
+
+								<input
+									type="text"
+									name="name"
+									placeholder="Name"
+									class="form-control"
+								/>
+							</div>
+							<!-- end line name group -->
+
+							<!-- start line email group -->
+							<div class="form-group">
+								<label data-require="true">Your Email </label>
+
+								<input
+									type="email"
+									name="email"
+									placeholder="Email"
+									class="form-control"
+								/>
+							</div>
+							<!-- end line email group -->
+
+							<!-- start line review group message -->
+							<div class="form-group mt-2">
+								<label data-require="true">Your Review </label>
+
+								<textarea
+									name="reviews-message"
+									class="form-control"
+									placeholder="Message"
+									rows="12"
+								></textarea>
+							</div>
+							<!-- end line review group message -->
+
+							<button
+								type="submit"
+								class="btn btn-danger bg-danger-1 mt-4"
+							>
+								Submit
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- end line location -->
 		</main>
 		<!-- end line main tag -->
 

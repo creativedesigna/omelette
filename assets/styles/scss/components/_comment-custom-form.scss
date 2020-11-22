@@ -1,0 +1,56 @@
+%comment-custom-form {
+	@include media("max", "md") {
+		border-top: 1px solid $secondary-1;
+		padding-top: 30px;
+	}
+
+	label {
+		font-size: 18px;
+		line-height: 1.33;
+		letter-spacing: 0.1px;
+		color: #252b42;
+	}
+
+	label[data-require="true"] {
+		&:after {
+			content: "*";
+			color: #ef4129;
+		}
+	}
+
+	input,
+	textarea {
+		padding: 12px 22px;
+		border-radius: 16px;
+		border: solid 1px #e5e5e5;
+		background-color: #f9f9f9;
+		font-size: 16px;
+		line-height: 2;
+		font-weight: 500;
+		letter-spacing: 0.2px;
+		color: $dark-1;
+
+		&:focus {
+			background-color: #f9f9f9;
+		}
+
+		&::placeholder {
+			color: #737373;
+		}
+
+		&:focus {
+			box-shadow: none;
+			border: 1px solid #4e4e4e;
+		}
+	}
+
+	textarea {
+		resize: none;
+	}
+
+	button[type="submit"] {
+		width: 100%;
+		border-radius: 17px;
+		padding: 17px 15px;
+	}
+}
