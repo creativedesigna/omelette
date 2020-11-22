@@ -1,3 +1,17 @@
+const allInputs = document.querySelectorAll("input");
+Array.from(allInputs).forEach((input) => {
+	if (
+		input.getAttribute("autofocus") &&
+		input.parentElement.classList.contains("custom-auth-input")
+	) {
+		$(input.parentElement.querySelector("label")).toggleClass(
+			"custom-auth-input__active-label"
+		);
+
+		$(input.parentElement.querySelector("i")).toggleClass("text-dark");
+	}
+});
+
 $(".custom-auth-input > input").focus(customAuthInputHandler);
 
 $(".custom-auth-input > input").blur(customAuthInputHandler);

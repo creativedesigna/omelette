@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/styles/owl.carousel.min.css" />
 		<link rel="stylesheet" href="assets/styles/aos.css" />
-		<link rel="stylesheet" href="assets/styles/scss/about-us.css" />
+		<link rel="stylesheet" href="assets/styles/scss/auth.css" />
 	</head>
 	<body>
 		<!-- start line login modal -->
@@ -278,260 +278,189 @@
 		<!-- end line header -->
 
 		<!-- start line main tag -->
-		<main class="overflow-hidden">
+		<main>
 			<!-- start line section breadcrumb: styles in sections/breadcrumb -->
 			<section class="s-breadcrumb overflow-auto">
 				<div class="d-flex align-items-center flex-column rounded">
-					<h1>About Us</h1>
+					<h1>Auth</h1>
 
 					<ul class="breadcrumb">
 						<li class="breadcrumb-item"><a href="#">Home</a></li>
 						<li class="breadcrumb-item active" aria-current="page">
-							About Us
+							Auth
 						</li>
 					</ul>
 				</div>
 			</section>
 			<!-- end line section breadcrumb -->
 
-			<!-- start line section description -->
-			<section class="description">
-				<div class="row">
-					<div class="col-xl-6">
-						<div class="description__content">
-							<h2>Title Lorem ipsum sit dolor sit amet,</h2>
+			<!-- start line auth page -->
+			<section class="auth-page">
+				<div class="d-flex justify-content-center auth-page__btn-tab">
+					<a
+						href="#"
+						data-tab-name="login-page"
+						data-tab-group-name="auth-page"
+						>Login</a
+					>
 
-							<p>
-								Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit. Eget libero ipsum congue sit
-								cras phasellus. Pharetra sed sed cursus duis
-								ipsum, etiam sed eget.t sed sed cursus duis
-								ipsum, etiam sed eget.t
-								<br /><br />
-								Eget libero ipsum congue sit cras phasellus.
-								Pharetra sed sed cursus duis ipsum, etiam sed
-								eget.t sed sed cursus duis ipsum, etiam sed
-								eget.t
-							</p>
-						</div>
-					</div>
+					<a
+						href="#"
+						data-tab-name="register-page"
+						data-tab-group-name="auth-page"
+						data-tab-active="true"
+						>Register</a
+					>
+				</div>
 
-					<div class="col-xl-6 d-sm-none d-xl-block">
-						<div class="description__images">
-							<img
-								src="assets/uploads/images/about-us/1.png"
-								alt="1"
-								width="278"
-								height="437"
-								draggable="false"
-								data-aos="fade-up"
+				<div class="auth-page__pages">
+					<div
+						data-tab-group-name-item="auth-page"
+						class="auth-page__pages_login"
+					>
+						<!-- start  line login form -->
+						<form class="modal-body__form">
+							<input
+								type="hidden"
+								name="auth-type"
+								value="login"
 							/>
 
-							<div>
-								<img
-									src="assets/uploads/images/about-us/2.png"
-									alt="1"
-									width="390"
-									height="245"
-									draggable="false"
-									data-aos="fade-left"
-								/>
+							<div class="custom-auth-input">
+								<i class="fas fa-envelope"></i>
 
-								<img
-									src="assets/uploads/images/about-us/3.png"
-									alt="1"
-									width="280"
-									height="319"
-									draggable="false"
-									data-aos="fade-left"
+								<label
+									for="username-login-page"
+									data-require="true"
+									>Username or email</label
+								>
+								<input
+									type="text"
+									name="username"
+									data-require="true"
+									id="username-login-page"
+									data-require="true"
 								/>
 							</div>
-						</div>
+
+							<br />
+
+							<div class="custom-auth-input">
+								<i class="fas fa-eye"></i>
+
+								<label
+									for="password-login-page"
+									data-require="true"
+									>Password</label
+								>
+								<input
+									type="password"
+									data-require="true"
+									name="password"
+									data-require="true"
+									id="password-login-page"
+									data-require="true"
+								/>
+							</div>
+
+							<div class="form-check mt-4">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									id="remember-me"
+								/>
+
+								<label
+									class="form-check-label"
+									for="remember-me"
+								>
+									Remember Me
+								</label>
+							</div>
+
+							<button
+								type="submit"
+								class="btn btn-danger bg-danger-1"
+							>
+								Login
+							</button>
+
+							<div class="text-center">
+								<a href="#">Lost Your Password?</a>
+							</div>
+						</form>
+						<!-- end line login form -->
+					</div>
+
+					<div
+						data-tab-group-name-item="auth-page"
+						class="auth-page__pages_register"
+					>
+						<!-- start line register form -->
+						<form class="modal-body__form">
+							<input
+								type="hidden"
+								name="auth-type"
+								value="register"
+							/>
+
+							<div class="custom-auth-input">
+								<i class="fas fa-envelope"></i>
+
+								<label
+									for="username-register-page"
+									data-require="true"
+									>Email Address</label
+								>
+								<input
+									type="email"
+									autofocus="true"
+									name="username"
+									data-require="true"
+									id="username-register-page"
+									data-require="true"
+								/>
+							</div>
+
+							<br />
+
+							<div class="custom-auth-input">
+								<i class="fas fa-eye"></i>
+
+								<label
+									for="password-register-page"
+									data-require="true"
+									>Password</label
+								>
+								<input
+									type="password"
+									data-require="true"
+									name="password"
+									data-require="true"
+									id="password-register-page"
+									data-require="true"
+								/>
+							</div>
+
+							<button
+								type="submit"
+								class="btn btn-danger bg-danger-1"
+							>
+								Register
+							</button>
+						</form>
+						<!-- end line register form -->
+
+						<p>
+							Your personal data will be used to support your
+							experience throughout this website, to manage access
+							to your account, and for other purposes described in
+							our privacy policy.
+						</p>
 					</div>
 				</div>
 			</section>
-			<!-- end line section description -->
-
-			<!-- start line section image carousel: styles in sections/image-carousel -->
-			<div class="overflow-x-hidden">
-				<section
-					class="s-image-carousel position-relative d-sm-none d-md-block"
-				>
-					<div class="owl-carousel image-carousel">
-						<div class="s-image-carousel__item">
-							<a href="#">
-								<img
-									src="assets/uploads/images/sections/image-carousel/image-0.png"
-									alt="image-0"
-								/>
-							</a>
-						</div>
-						<div class="s-image-carousel__item">
-							<a href="#">
-								<img
-									src="assets/uploads/images/sections/image-carousel/image-0.png"
-									alt="image-0"
-								/>
-							</a>
-						</div>
-						<div class="s-image-carousel__item">
-							<a href="#">
-								<img
-									src="assets/uploads/images/sections/image-carousel/image-0.png"
-									alt="image-0"
-								/>
-							</a>
-						</div>
-					</div>
-				</section>
-			</div>
-			<!-- end line section image carousel -->
-
-			<!-- start line section chefs -->
-			<section class="chefs">
-				<h2>Our Chefs</h2>
-
-				<ul class="row justify-content-center">
-					<li class="col-xl-4 col-lg-6">
-						<!-- start line chef card -->
-						<div class="chef-card" data-aos="fade-down">
-							<div class="chef-card__image">
-								<img
-									src="assets/uploads/images/about-us/chef.png"
-									alt="chef"
-									draggable="false"
-								/>
-
-								<span>Manager</span>
-							</div>
-
-							<h4>John Doe</h4>
-
-							<p>Rutrum velit nulla enim purus sapien.</p>
-
-							<div class="chef-card__socials">
-								<a
-									href="#"
-									data-title="tooltip"
-									title="facebook"
-								>
-									<i class="fab fa-facebook-f"></i>
-								</a>
-
-								<a
-									href="#"
-									data-title="tooltip"
-									title="twitter"
-								>
-									<i class="fab fa-twitter"></i>
-								</a>
-
-								<a
-									href="#"
-									data-title="tooltip"
-									title="instagram"
-								>
-									<i class="fab fa-instagram"></i>
-								</a>
-							</div>
-						</div>
-						<!-- end line chef card -->
-					</li>
-
-					<li class="col-xl-4 col-lg-6">
-						<!-- start line chef card -->
-						<div class="chef-card" data-aos="fade-down">
-							<div class="chef-card__image">
-								<img
-									src="assets/uploads/images/about-us/chef.png"
-									alt="chef"
-									draggable="false"
-								/>
-
-								<span>Manager</span>
-							</div>
-
-							<h4>John Doe</h4>
-
-							<p>Rutrum velit nulla enim purus sapien.</p>
-
-							<div class="chef-card__socials">
-								<a
-									href="#"
-									data-title="tooltip"
-									title="facebook"
-								>
-									<i class="fab fa-facebook-f"></i>
-								</a>
-
-								<a
-									href="#"
-									data-title="tooltip"
-									title="twitter"
-								>
-									<i class="fab fa-twitter"></i>
-								</a>
-
-								<a
-									href="#"
-									data-title="tooltip"
-									title="instagram"
-								>
-									<i class="fab fa-instagram"></i>
-								</a>
-							</div>
-						</div>
-						<!-- end line chef card -->
-					</li>
-
-					<li class="col-xl-4 col-lg-6">
-						<!-- start line chef card -->
-						<div class="chef-card" data-aos="fade-down">
-							<div class="chef-card__image">
-								<img
-									src="assets/uploads/images/about-us/chef.png"
-									alt="chef"
-									draggable="false"
-								/>
-
-								<span>Manager</span>
-							</div>
-
-							<h4>John Doe</h4>
-
-							<p>Rutrum velit nulla enim purus sapien.</p>
-
-							<div class="chef-card__socials">
-								<a
-									href="#"
-									data-title="tooltip"
-									title="facebook"
-								>
-									<i class="fab fa-facebook-f"></i>
-								</a>
-
-								<a
-									href="#"
-									data-title="tooltip"
-									title="twitter"
-								>
-									<i class="fab fa-twitter"></i>
-								</a>
-
-								<a
-									href="#"
-									data-title="tooltip"
-									title="instagram"
-								>
-									<i class="fab fa-instagram"></i>
-								</a>
-							</div>
-						</div>
-						<!-- end line chef card -->
-					</li>
-				</ul>
-			</section>
-			<!-- end line section chefs -->
+			<!-- end line auth page tab -->
 		</main>
 		<!-- end line main tag -->
 
@@ -696,8 +625,9 @@
 		<script src="assets/scripts/bootstrap.min.js"></script>
 		<script src="assets/scripts/owl.carousel.min.js"></script>
 		<script src="assets/scripts/aos.js"></script>
+		<script src="assets/scripts/Utility.js"></script>
 		<script src="assets/scripts/custom-auth-input.js"></script>
-		<script src="assets/scripts/pages/about-us.js"></script>
+		<script src="assets/scripts/pages/auth.js"></script>
 		<script src="assets/scripts/app.js"></script>
 	</body>
 </html>

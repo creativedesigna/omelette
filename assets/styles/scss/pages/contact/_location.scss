@@ -4,6 +4,7 @@
 	max-width: 95%;
 	margin: 0 auto;
 	margin-bottom: 125px;
+	overflow: hidden;
 
 	@include media("max", "md") {
 		margin-bottom: 30px;
