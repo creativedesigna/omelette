@@ -4,6 +4,10 @@
 	margin: 0 auto;
 	padding: 10px 24px 50px 24px;
 
+	@include media("min", "xl") {
+		padding-bottom: 150px !important;
+	}
+
 	h3 {
 		font-size: 40px;
 		font-weight: bold;

@@ -2,7 +2,11 @@
 	width: 1440px;
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 50px 24px;
+	padding: 50px 24px 30px 24px;
+
+	@include media("min", "xl") {
+		padding-bottom: 180px !important;
+	}
 
 	&__filter {
 		& > form {

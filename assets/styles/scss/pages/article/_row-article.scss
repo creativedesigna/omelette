@@ -1,10 +1,10 @@
 .row-article {
-	padding-top: 30px !important;
 	overflow: hidden;
 	padding-bottom: 20px !important;
 	width: 1400px;
 	max-width: 95%;
 	margin: 0 auto;
+	padding-top: 30px !important;
 
 	@include media("min", "xl") {
 		padding-bottom: 150px !important;

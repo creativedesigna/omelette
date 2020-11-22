@@ -5,8 +5,8 @@
 	margin: 0 auto;
 	overflow: hidden;
 
-	@media (min-width: 1470px) {
-		padding-bottom: 100px;
+	@include media("min", "xl") {
+		padding-bottom: 150px !important;
 	}
 
 	h2 {
