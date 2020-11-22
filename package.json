@@ -14,7 +14,8 @@
 		"sass:compile-gallery": "sass --watch assets/styles/scss/gallery.scss:assets/styles/scss/gallery.css --style compressed",
 		"sass:compile-contact": "sass --watch assets/styles/scss/contact.scss:assets/styles/scss/contact.css --style compressed",
 		"sass:compile-about-us": "sass --watch assets/styles/scss/about-us.scss:assets/styles/scss/about-us.css --style compressed",
-		"sass:compile-auth": "sass --watch assets/styles/scss/auth.scss:assets/styles/scss/auth.css --style compressed"
+		"sass:compile-auth": "sass --watch assets/styles/scss/auth.scss:assets/styles/scss/auth.css --style compressed",
+		"sass:compile-forget-password": "sass --watch assets/styles/scss/forget-password.scss:assets/styles/scss/forget-password.css --style compressed"
 	},
 	"repository": {
 		"type": "git",
