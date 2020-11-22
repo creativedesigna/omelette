@@ -12,7 +12,7 @@
 		width: 50%;
 		height: calc(485px + 129px);
 
-		@media (min-width: 1470px) {
+		@include media("min", "xl") {
 			width: 500px;
 			display: block !important;
 		}
@@ -48,6 +48,16 @@
 			}
 
 			& div > ul {
+				@media (max-width: 1469.99px) {
+					position: relative;
+					left: 200px;
+				}
+
+				@include media("max", "lg") {
+					position: static;
+					left: 0;
+				}
+
 				@include media("max", "sm") {
 					flex-direction: column;
 				}

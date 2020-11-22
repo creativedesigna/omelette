@@ -10,12 +10,14 @@
 @import "./layout/header", "./layout/footer", "./layout/top-nav";
 
 // 5. Components
+@import "./components/custom-auth-input";
+
+// Layout
 @import "./layout/header", "./layout/footer", "./layout/top-nav",
 	"./layout/login-modal";
 
-@import "./components/custom-auth-input";
+// Component
+@import "./components/comment-custom-form";
 
 // 8. Sections
-@import "./pages/product/breadcrumb", "./pages/product/header-product",
-	"./pages/product/s-tabs-product", "./pages/product/related-foods",
-	"./components/comment-custom-form";
+@import "./pages/article/breadcrumb", "./pages/article/row-article";
