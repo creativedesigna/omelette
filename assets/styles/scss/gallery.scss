@@ -7,7 +7,10 @@
 @import "./base/base", "./base/fonts", "./base/typography", "./base/helpers";
 
 // 4. Layout-related sections
-@import "./layout/header", "./layout/footer", "./layout/top-nav";
+@import "./layout/header", "./layout/footer", "./layout/top-nav",
+	"./layout/login-modal";
+
+@import "./components/custom-auth-input";
 
 // 8. Sections
 @import "./pages/Gallery/breadcrumb", "./pages/Gallery/gallery";

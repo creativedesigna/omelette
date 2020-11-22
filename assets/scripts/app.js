@@ -2,7 +2,7 @@ const mobileMenuIcon = document.querySelector("#mobile-menu-icon");
 
 function runInitialize() {
 	$(function () {
-		$("[data-toggle='tooltip']").tooltip({ trigger: "hover" });
+		$("[data-title='tooltip']").tooltip({ trigger: "hover" });
 	});
 
 	if (typeof initialize === "function") {
@@ -19,6 +19,10 @@ function clickMobileMenuIconHandler() {
 
 $(document).ready(function () {
 	runInitialize();
+
+	setTimeout(function () {
+		$("input").val("");
+	}, 200);
 
 	// # mobile menu icon run click handler
 	mobileMenuIcon.addEventListener("click", clickMobileMenuIconHandler);

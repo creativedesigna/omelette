@@ -7,10 +7,12 @@
 @import "./base/base", "./base/fonts", "./base/typography", "./base/helpers";
 
 // 4. Layout-related sections
-@import "./layout/header", "./layout/footer", "./layout/top-nav";
+@import "./layout/header", "./layout/footer", "./layout/top-nav",
+	"./layout/login-modal";
 
 // 5. Components
-@import "./components/product-card", "./components/range";
+@import "./components/product-card", "./components/range",
+	"./components/custom-auth-input";
 
 // 8. Sections
 @import "./pages/products/breadcrumb", "./pages/products/products-container";

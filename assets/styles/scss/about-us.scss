@@ -7,10 +7,11 @@
 @import "./base/base", "./base/fonts", "./base/typography", "./base/helpers";
 
 // 4. Layout-related sections
-@import "./layout/header", "./layout/footer", "./layout/top-nav";
+@import "./layout/header", "./layout/footer", "./layout/top-nav",
+	"./layout/login-modal";
 
 // Components
-@import "./components/chef-card";
+@import "./components/chef-card", "./components/custom-auth-input";
 
 // 8. Sections
 @import "./pages/about-us/breadcrumb", "./pages/about-us/description",

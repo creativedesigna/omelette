@@ -22,6 +22,86 @@
 		<link rel="stylesheet" href="assets/styles/scss/404.css" />
 	</head>
 	<body>
+		<!-- start line login modal -->
+		<div
+			class="modal fade"
+			id="login-modal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalCenterTitle"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<!-- start line close modal -->
+						<div
+							class="d-flex align-items-center justify-content-end"
+						>
+							<button
+								type="button"
+								class="modal-body__close"
+								data-dismiss="modal"
+							>
+								<i class="fa fa-times"></i>
+							</button>
+						</div>
+						<!-- end lien close modal -->
+
+						<!-- start line header modal -->
+						<div class="modal-body__header">
+							<h5>Login</h5>
+
+							<a href="#">Create an Account</a>
+						</div>
+						<!-- end line header modal -->
+
+						<!-- start line form modal -->
+						<form class="modal-body__form">
+							<div class="custom-auth-input">
+								<i class="fas fa-envelope"></i>
+
+								<label for="username">Username or email</label>
+								<input
+									type="text"
+									autofocus
+									name="username"
+									id="username"
+								/>
+							</div>
+
+							<br />
+
+							<div class="custom-auth-input">
+								<i class="fas fa-eye"></i>
+
+								<label for="password">Password</label>
+								<input
+									type="password"
+									autofocus
+									name="password"
+									id="password"
+								/>
+							</div>
+
+							<button
+								type="submit"
+								class="btn btn-danger bg-danger-1"
+							>
+								Login
+							</button>
+
+							<div class="text-center">
+								<a href="#">Lost Your Password?</a>
+							</div>
+						</form>
+						<!-- end line form modal -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end line login modal -->
+
 		<!-- start line top nav: styles in layout/top-nav -->
 		<div class="top-nav py-2 bg-white">
 			<div
@@ -158,8 +238,10 @@
 						<a
 							href="#"
 							class="cursor-pointer ml-sm-3 ml-lg-0"
-							data-toggle="tooltip"
+							data-title="tooltip"
 							title="Profile"
+							data-toggle="modal"
+							data-target="#login-modal"
 						>
 							<i class="far fa-user"></i>
 						</a>
@@ -168,7 +250,7 @@
 						<a
 							href="#"
 							class="ml-3 cursor-pointer"
-							data-toggle="tooltip"
+							data-title="tooltip"
 							title="Bag"
 						>
 							<i class="fas fa-shopping-bag"></i>
@@ -387,6 +469,7 @@
 		<script src="assets/scripts/bootstrap.min.js"></script>
 		<script src="assets/scripts/owl.carousel.min.js"></script>
 		<script src="assets/scripts/aos.js"></script>
+		<script src="assets/scripts/custom-auth-input.js"></script>
 		<script src="assets/scripts/pages/404.js"></script>
 		<script src="assets/scripts/app.js"></script>
 	</body>
