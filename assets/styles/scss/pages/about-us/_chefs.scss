@@ -1,0 +1,29 @@
+.chefs {
+	width: 1440px;
+	max-width: 95%;
+	margin: 0 auto;
+	padding: 50px;
+	margin-bottom: 125px;
+
+	@include media("max", "md") {
+		margin-bottom: 30px;
+	}
+
+	h2 {
+		font-size: 48px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.27;
+		letter-spacing: 0.1px;
+		text-align: left;
+		color: #000000;
+		text-align: center;
+	}
+
+	.row {
+		li {
+			margin-top: 60px;
+		}
+	}
+}

@@ -12,7 +12,8 @@
 		"sass:compile-products": "sass --watch assets/styles/scss/products.scss:assets/styles/scss/products.css --style compressed",
 		"sass:compile-404": "sass --watch assets/styles/scss/404.scss:assets/styles/scss/404.css --style compressed",
 		"sass:compile-gallery": "sass --watch assets/styles/scss/gallery.scss:assets/styles/scss/gallery.css --style compressed",
-		"sass:compile-contact": "sass --watch assets/styles/scss/contact.scss:assets/styles/scss/contact.css --style compressed"
+		"sass:compile-contact": "sass --watch assets/styles/scss/contact.scss:assets/styles/scss/contact.css --style compressed",
+		"sass:compile-about-us": "sass --watch assets/styles/scss/about-us.scss:assets/styles/scss/about-us.css --style compressed"
 	},
 	"repository": {
 		"type": "git",
