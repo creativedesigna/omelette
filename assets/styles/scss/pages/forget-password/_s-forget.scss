@@ -2,6 +2,10 @@
 	padding-top: 64px;
 	margin-bottom: 150px;
 
+	@include media("max", "md") {
+		margin-bottom: 20px;
+	}
+
 	& > p {
 		margin: 0 auto;
 		max-width: 95%;

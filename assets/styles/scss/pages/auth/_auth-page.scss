@@ -4,6 +4,7 @@
 	margin: 50px auto;
 
 	@include media("max", "md") {
+		margin-bottom: 20px;
 	}
 
 	&__btn-tab {
