@@ -18,10 +18,36 @@ body {
 	height: 100%;
 	scroll-behavior: smooth;
 	// overflow-x: hidden;
+	@extend %scroll_style;
 }
 
 ul,
 ol {
 	list-style: none;
 	padding: 0;
+}
+
+%scroll_style {
+	&::-webkit-scrollbar {
+		width: 13px;
+		height: auto;
+		background-color: #fff;
+
+		@include media("max", "md") {
+			width: auto !important;
+		}
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: #555;
+		border-radius: 0;
+
+		&:active {
+			border-radius: 10px;
+		}
+
+		&:hover {
+			background: #333333;
+		}
+	}
 }
