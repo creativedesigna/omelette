@@ -337,12 +337,66 @@
 				<h3>Video</h3>
 
 				<!-- start line video gallery -->
-				<div style="display: none" id="video2">
-					<video
-						class="lg-video-object lg-html5 video-js vjs-default-skin"
+				<div style="display: none" id="video1">
+					<!-- if local video -->
+					<!-- <video
+						class="lg-video-object lg-html5"
 						controls
 						preload="none"
-						poster="assets/uploads/images/gallery.png"
+						postxer="assets/uploads/images/gallery.png"
+					>
+						<source
+							src="assets/......"
+							type="video/mp4"
+						/>
+						Your browser does not support HTML5 video.
+					</video> -->
+
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/x8U0_YxFKZs"
+						frameborder="0"
+						class="lg-video-object lg-html5"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</div>
+
+				<div style="display: none" id="video2">
+					<!-- if local video -->
+					<!-- <video
+						class="lg-video-object lg-html5"
+						controls
+						preload="none"
+						postxer="assets/uploads/images/gallery.png"
+					>
+						<source
+							src="assets/......"
+							type="video/mp4"
+						/>
+						Your browser does not support HTML5 video.
+					</video> -->
+
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/x8U0_YxFKZs"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</div>
+
+				<!-- 
+					if local video
+				 -->
+				<!-- <div style="display: none" id="video3">
+					<video
+						class="lg-video-object lg-html5"
+						controls
+						preload="none"
+						postxer="assets/uploads/images/gallery.png"
 					>
 						<source
 							src="assets/uploads/video/video.mp4"
@@ -350,15 +404,15 @@
 						/>
 						Your browser does not support HTML5 video.
 					</video>
-				</div>
-				<!-- end line image gallery -->
+				</div> -->
 
+				<!-- end line image gallery -->
 				<ul id="video-gallery" class="row">
 					<li
 						data-aos="fade-down"
 						class="col-lg-4 col-md-6 col-sm-12"
 						data-sub-html="Caption"
-						data-html="#video2"
+						data-src="https://youtu.be/x8U0_YxFKZs"
 					>
 						<i class="fas fa-play"></i>
 
@@ -371,7 +425,7 @@
 						data-aos="fade-down"
 						class="col-lg-4 col-md-6 col-sm-12"
 						data-sub-html="Caption"
-						data-html="#video2"
+						data-src="https://youtu.be/x8U0_YxFKZs"
 					>
 						<i class="fas fa-play"></i>
 
@@ -380,12 +434,11 @@
 							class="img-fluid"
 						/>
 					</li>
-
 					<li
 						data-aos="fade-down"
 						class="col-lg-4 col-md-6 col-sm-12"
 						data-sub-html="Caption"
-						data-html="#video2"
+						data-src="https://youtu.be/x8U0_YxFKZs"
 					>
 						<i class="fas fa-play"></i>
 
@@ -394,6 +447,21 @@
 							class="img-fluid"
 						/>
 					</li>
+
+					<!-- if local video -->
+					<!-- <li
+						data-aos="fade-down"
+						class="col-lg-4 col-md-6 col-sm-12"
+						data-sub-html="Caption"
+						data-html="#video3"
+					>
+						<i class="fas fa-play"></i>
+
+						<img
+							src="assets/uploads/images/gallery.png"
+							class="img-fluid"
+						/>
+					</li> -->
 				</ul>
 				<!-- end line video gallery -->
 			</section>
