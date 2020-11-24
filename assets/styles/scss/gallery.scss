@@ -10,7 +10,7 @@
 @import "./layout/header", "./layout/footer", "./layout/top-nav",
 	"./layout/login-modal";
 
-@import "./components/custom-auth-input";
+@import "./components/custom-auth-input", "components/breadcrumb-lg";
 
 // 8. Sections
-@import "./pages/Gallery/breadcrumb", "./pages/Gallery/gallery";
+@import "./pages/Gallery/gallery";

@@ -14,10 +14,10 @@
 
 // Layout
 @import "./layout/header", "./layout/footer", "./layout/top-nav",
-	"./layout/login-modal";
+	"./layout/login-modal", "./components/breadcrumb-sm";
 
 // Component
 @import "./components/comment-custom-form";
 
 // 8. Sections
-@import "./pages/article/breadcrumb", "./pages/article/row-article";
+@import "./pages/article/row-article";

@@ -17,7 +17,8 @@
 		"sass:compile-auth": "sass --watch assets/styles/scss/auth.scss:assets/styles/scss/auth.css --style compressed",
 		"sass:compile-forget-password": "sass --watch assets/styles/scss/forget-password.scss:assets/styles/scss/forget-password.css --style compressed",
 		"sass:compile-blog": "sass --watch assets/styles/scss/blog.scss:assets/styles/scss/blog.css --style compressed",
-		"sass:compile-article": "sass --watch assets/styles/scss/article.scss:assets/styles/scss/article.css --style compressed"
+		"sass:compile-article": "sass --watch assets/styles/scss/article.scss:assets/styles/scss/article.css --style compressed",
+		"sass:compile-all": "sass --watch assets/styles/scss/all.scss:assets/styles/scss/all.min.css --style compressed"
 	},
 	"repository": {
 		"type": "git",

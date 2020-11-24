@@ -12,7 +12,7 @@
 
 // 5. Components
 @import "./components/product-card", "./components/range",
-	"./components/custom-auth-input";
+	"./components/custom-auth-input", "./components/breadcrumb-lg";
 
 // 8. Sections
-@import "./pages/products/breadcrumb", "./pages/products/products-container";
+@import "./pages/products/products-container";

@@ -11,8 +11,8 @@
 	"./layout/login-modal";
 
 // Components
-@import "./components/chef-card", "./components/custom-auth-input";
+@import "./components/chef-card", "./components/custom-auth-input",
+	"./components/breadcrumb-lg";
 
 // 8. Sections
-@import "./pages/about-us/breadcrumb", "./pages/about-us/description",
-	"./pages/about-us/chefs";
+@import "./pages/about-us/description", "./pages/about-us/chefs";

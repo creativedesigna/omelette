@@ -11,9 +11,8 @@
 	"./layout/login-modal";
 
 // 5. Components
-@import "./components/comment-custom-form",
-	"./components/custom-auth-input";
+@import "./components/comment-custom-form", "./components/custom-auth-input",
+	"./components/breadcrumb-lg";
 
 // 8. Sections
-@import "./pages/contact/breadcrumb", "./pages/contact/contacts",
-	"./pages/contact/location";
+@import "./pages/contact/contacts", "./pages/contact/location";
